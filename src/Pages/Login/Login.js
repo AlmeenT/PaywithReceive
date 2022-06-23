@@ -27,14 +27,13 @@ const Login = () => {
               required
               id="password"
               maxlength="20"
-              minlength="5"
-              pattern="(?=.*d)(?=.*[a - z])(?.*[A - Z])(.8,)"
+            
             />
           </div>
         </div>
         <div class="login">
           <a href="/">
-            <input type="submit" value="Log In" required />
+            <input type="submit" value="Log In"  />
           </a>
         </div>
         <p class="p">
