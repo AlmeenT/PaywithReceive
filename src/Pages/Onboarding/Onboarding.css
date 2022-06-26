@@ -4,12 +4,16 @@ article{
     position:relative;
     overflow:hidden;
 }
+
 .pics {
     position: fixed;
 }
 .pics img{
     width:100%;
+    
 }
+
+
 .pics .pext{
 
     background-color: rgba(0, 0, 0, 0.2);
@@ -29,4 +33,31 @@ backdrop-filter: blur(15px);
     margin:auto;
     height: fit-content;
    
+}
+.dots{
+    
+    display: flex;
+    gap:8px;
+    justify-content: center;
+}
+.dot{
+    position: absolute;
+    bottom:250px;
+    width:10px;
+    height:10px;
+    background-color: #dbdbdb;
+    border-radius: 50%;
+}
+
+ 
+.dot.active{
+    position:absolute;
+   background-color: black;
+    left: 160px;
+}
+
+.dot.riop{
+position: absolute;
+
+    right: 160px;
 }
