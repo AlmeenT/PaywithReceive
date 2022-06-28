@@ -1,12 +1,5 @@
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import {Routes, Route} from 'react-router-dom'
 import Yome from './Pages/Onboarding/Yome.js';
 import Onboarding0 from './Pages/Onboarding/Onboarding0';
 import Onboarding from './Pages/Onboarding/Onboarding';
@@ -28,7 +21,6 @@ function App() {
   
   return (
     <div className="App">
-      <Router>
         <Routes>
           <Route exact path="/" element={<Onboarding />} />
           <Route path="/onboarding0" element={<Onboarding0 />} />
@@ -44,8 +36,6 @@ function App() {
           <Route path="/forgotPassword" element={<ForgotPassword />} />
         </Routes>
         <Footer />
-      </Router>
-      </BrowserRouter>
     </div>
   );
 }
