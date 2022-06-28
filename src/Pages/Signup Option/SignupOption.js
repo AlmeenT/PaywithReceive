@@ -9,7 +9,7 @@ function signupOption() {
     <div className='option-wrapper'>
 
       <div className='logo-div'>
-          <img src={logo} alt="brand-logo"  />
+          <img className='logo' src={logo} alt="brand-logo"  />
       </div>
       <div className='option-div'>
         <div className='btn-div'>

@@ -4,17 +4,17 @@ article{
     position:relative;
     overflow:hidden;
 }
-.pics {
-    position: fixed;
+
+img {
+    width:50vw;
+    height: 78vh;
 }
-.pics img{
-    width:100%;
-}
+
 .pics .pext{
 
     background-color: rgba(0, 0, 0, 0.2);
 backdrop-filter: blur(15px);
-    margin-left: 120px;
+    margin-left: 45%;
     margin-right: 120px;
     border-color: aqua;
 }
@@ -22,6 +22,7 @@ backdrop-filter: blur(15px);
     font-size: 20px;
     text-align: center;
     position: absolute;
+    width: 200px;
     bottom: 150px;
    color: rgb(80, 80, 211);
     left:0;

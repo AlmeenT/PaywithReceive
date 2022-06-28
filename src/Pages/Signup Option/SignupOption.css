@@ -7,6 +7,11 @@
     justify-content: center;
 }
 
+.logo {
+    width:20vw;
+    height:35vh;
+}
+
 .option-wrapper .option-div .btn1{
     background: #2F3E91;
     height: 40px;

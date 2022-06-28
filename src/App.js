@@ -24,7 +24,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Onboarding />} />
           <Route path="/onboarding0" element={<Onboarding0 />} />
-          <Route path="/yome" element={<Yome />} />
           <Route path="/signupLogin" element={<SignupOption />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signupDetails" element={<SignupDetails />} />
