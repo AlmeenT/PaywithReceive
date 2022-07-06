@@ -5,7 +5,7 @@ import dropdown from '../../Assets/Images/sidebarIcons/dropdown.svg'
 const sidebarItems = [
   {
     text: "Dashboard",
-    url: '/dashbaord',
+    url: '/dashboard',
     icon: dropdown
   },
   {
