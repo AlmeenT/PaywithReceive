@@ -1,0 +1,18 @@
+.links h2 {
+    font-size:6px;
+}
+
+.buttons div{
+    font-size:7px;
+}
+
+@media screen and (min-width: 900px){
+    .links h2 {
+    font-size:13px;
+    }
+
+    .buttons div{
+    font-size:14px;
+}
+    
+}

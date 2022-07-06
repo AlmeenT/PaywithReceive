@@ -2,7 +2,11 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <div className='ml-[200px] px-6'>ContactUs</div>
+    //please dont remove this lg:ml-[264px] lg:pl-[120px] just write your own code in it. thank you
+    <div className='lg:ml-[264px] lg:pl-[120px]'>
+      {/* write here */}
+      ContactUs
+    </div>
   )
 }
 

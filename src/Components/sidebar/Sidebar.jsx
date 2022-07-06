@@ -53,7 +53,7 @@ const Sidebar = () => {
 <ul>
   {sidebarItems.map((item, index) => (
         <li  className={`flex items-center justify-between pl-[16px] pr-[22px] border-t-[2px] ${index===0 ? 'white' : 'border-[#292561]'} font-medium cursor-pointer text-white lg:text-[24px] lg:leading-[36px] py-[14px] `} 
-        onClick={()=>navigate("/dashboard")} key={index}>
+        onClick={()=>navigate(item.url)} key={index}>
             <span>{item.text}</span>
             <img src={item.icon} alt={item.text} />
         </li>

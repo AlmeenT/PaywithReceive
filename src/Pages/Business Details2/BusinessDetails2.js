@@ -34,6 +34,9 @@ useEffect(() => {
 
 const handleSubmit = (e) =>{
   e.preventDefauilt();
+  sessionStorage.setItem('businessDetails', JSON.stringify({...form}))  
+
+    window.location="/busDetails4";
 
 }
 

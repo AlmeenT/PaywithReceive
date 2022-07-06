@@ -2,7 +2,10 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='ml-[200px] px-6'>Services</div>
+    <div className='lg:ml-[264px] lg:pl-[120px]'>
+      {/* write here */}
+      Services
+    </div>
   )
 }
 
