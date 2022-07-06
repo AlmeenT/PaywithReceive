@@ -147,7 +147,7 @@ p a:hover {
     }
 }*/
 
-@media screen and (min-width: 350px and max-width: 550px) {
+@media screen and (min-width: 350px) and (max-width: 550px) {
 
     input[type="submit"],
     input[type="email"],

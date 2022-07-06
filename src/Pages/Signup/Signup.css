@@ -34,6 +34,7 @@
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #05245a;
+    text-align: center;
 }
 .auth__form-container_fields-content_input {
     display: flex;
@@ -128,16 +129,17 @@ small {
     font-size: 15;
     font-weight: 600;
     text-align: center;
+    margin-left: 1%;
 }
 
 
-@media (max-width: 850px) {
+@media screen and  (max-width: 800px) {
     .auth__form-container {
-        width: 100%;
+        flex-direction: column-reverse;
     }
     .auth__form-container_fields {
         /* background-color: blue; */
-        width: 100%;
+        justify-content: center;
     }
     .auth__form-container_fields-content {
         /* background-color: blue; */
@@ -162,4 +164,24 @@ small {
     .btn-1 {
         margin-right: 50px;
     }
+}
+
+@media screen and (max-width: 400px) {
+    #btn {
+        margin-left: 67px;
+    }
+    .auth__form-container_fields-content_input label {
+        margin-left: 10px;
+    }
+    .auth__form-container_fields-content_input input {
+        margin-left: 10px;
+    }
+    small {
+        margin-left: 10px;
+    }
+   
+    .warning {
+        margin-left: 10px;
+    }
+
 }

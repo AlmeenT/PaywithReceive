@@ -1,0 +1,50 @@
+.BusinessDetails4-div {
+    margin: 100px auto;
+}
+.BusinessDetails4-div .wrapper{
+    margin: auto;
+    width: fit-content;
+}
+.BusinessDetails4-div .parent{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    background: #F7F7F7;
+    box-shadow: 14px 16px 4px rgba(0, 0, 0, 0.25);
+    width: fit-content;
+}
+.BusinessDetails4-div .img-parent{
+    display: flex;
+    align-items:baseline;
+}
+.BusinessDetails4-div .option-div{
+    margin: 15px;
+}
+.BusinessDetails4-div p{
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #2E2A2AE3;
+    text-align: center;
+}
+.BusinessDetails4-div .btn{
+    width: 131px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #292561;
+    float: right;
+    margin: 30px 0;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 562px){
+    .BusinessDetails4-div .parent{
+        display: flex;
+        flex-direction: column;
+    }
+}

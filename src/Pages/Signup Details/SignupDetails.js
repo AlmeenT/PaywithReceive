@@ -47,11 +47,9 @@ const SignupDetails = () => {
     reset();
   }
 
-  
-
-
 
   return (
+    
     <div className="auth_form-container">
       {/* <p>{ userDetails }</p> */}
       <div className="auth_form-container_fields">
@@ -176,8 +174,9 @@ const SignupDetails = () => {
             
            </form>
         </div>
-      </div>
-    </div>
+  </div>
+
+  </div>
   )
 }
 

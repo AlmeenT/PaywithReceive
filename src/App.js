@@ -1,14 +1,8 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
-  Switch,
   Route,
-  Redirect,
   Routes,
-  Navigate,
 } from "react-router-dom";
-import Onboarding0 from './Pages/Onboarding/Onboarding0';
-import Onboarding from './Pages/Onboarding/Onboarding';
 import SignupOption from './Pages/Signup Option/SignupOption';
 import Signup from './Pages/Signup/Signup';
 import Login from './Pages/Login/Login';
@@ -19,30 +13,56 @@ import ForgotPassword from './Pages/Forgot Password/ForgotPassword';
 import BusinessDetails2 from './Pages/Business Details2/BusinessDetails2';
 import BusinessDetails4 from './Pages/Business Details4/BusinessDetails4';
 import BusinessDetails5 from './Pages/Business Details5/BusinessDetails5';
-
-
+import Navbar from './Components/navbar/Navbar'
+import { useLocation } from 'react-router-dom';
+import Sidebar from './Components/sidebar/Sidebar';
+import Transaction from './Pages/Transaction/Transaction';
+import MyAccount from './Pages/MyAccount/MyAccount';
+import Payment from "./Pages/Payment/Payment"
+import ContactUs from "./Pages/ContactUs/ContactUs"
+import DeveloperCode from "./Pages/DeveloperCode/DeveloperCode"
+import Services from "./Pages/Services/Services";
+import AccountSettings from "./Pages/AccountSettings/AccountSettings"
+import Home from './Pages/Home/Home'
+import Support from './Pages/Support/Support';
+import AboutUs from './Pages/About us/AboutUs'
 
 function App() {
-  
-  
+  const location=useLocation()
+ console.log(location)
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Onboarding />} />
-          <Route path="/onboarding0" element={<Onboarding0 />} />
-          <Route path="/signupLogin" element={<SignupOption />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/signupDetails" element={<SignupDetails />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/busDetails2" element={<BusinessDetails2 />} />
-          <Route path="/busDetails4" element={<BusinessDetails4 />} />
-          <Route path="/busDetails5" element={<BusinessDetails5 />} />
-          <Route path="/forgotPassword" element={<ForgotPassword />} />
-        </Routes>
-        <Footer />
-      </Router>
+      {(location.pathname==="/dashboard" || location.pathname==="/transaction" || location.pathname==="/myAccount" || location.pathname==="/payment" || location.pathname==="/contactUs"|| location.pathname==="/developerCode"|| location.pathname==="/services"|| location.pathname==="/accountSettings")&&(<><Navbar /><Sidebar/></>)}
+
+
+<Routes>
+<Route path="/" element={<Home />} />
+<Route path="/about" element={<AboutUs />} />
+<Route path="/support" element={<Support />} />
+<Route path="/signupLogin" element={<SignupOption />} />
+<Route path="/signup" element={<Signup />} />
+<Route path="/signupDetails" element={<SignupDetails />} />
+<Route path="/login" element={<Login />} />
+<Route path="/forgotPassword" element={<ForgotPassword />} />
+<Route path="/busDetails2" element={<BusinessDetails2 />} />
+<Route path="/busDetails4" element={<BusinessDetails4 />} />
+<Route path="/busDetails5" element={<BusinessDetails5 />} />
+<Route path="/dashboard" element={<Dashboard />} />
+<Route path="/payment" element={<Payment />} />
+<Route path="/transaction" element={<Transaction />} />
+<Route path="/myAccount" element={<MyAccount />} />
+<Route path="/contactUs" element={<ContactUs />} />
+<Route path="/services" element={<Services />} />
+<Route path="/developerCode" element={<DeveloperCode />} />
+<Route path="/accountSettings" element={<AccountSettings/>} />
+</Routes>
+
+
+
+<div>
+    
+{(location.pathname==="/" || location.pathname==="/home" || location.pathname==="/signupLogin" || location.pathname==="/signup" || location.pathname==="/signupDetails"|| location.pathname==="/login"|| location.pathname==="/forgotPassword"|| location.pathname==="/busDetails2" || location.pathname==="/busDetails4" || location.pathname==="/busDetails5")&&(<><Footer/></>)}
+</div>
     </div>
   );
 }
