@@ -180,18 +180,6 @@ p a:hover {
         font-family: 'Libre Baskerville', serif !important;
     }
 
-<<<<<<< HEAD
-@media screen and (min-width: 350px and max-width: 550px) {
-    input[type="email"],
-    input[type="password"] {
-        margin-top: 20px;
-        color: #010b0c;
-        width: 50vw;
-        padding: 12px 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-=======
     .re,
     .ceive {
         padding-top: 38%;
@@ -202,7 +190,6 @@ p a:hover {
 
         padding-top: 1vh;
 
->>>>>>> 53d54994ab9b41f23ec6f2a6e6a0f35865a9c3ed
     }
 
     .container {
