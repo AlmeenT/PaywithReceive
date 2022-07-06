@@ -33,7 +33,7 @@ function App() {
     <div className="App">
       {(location.pathname==="/dashboard" || location.pathname==="/transaction" || location.pathname==="/myAccount" || location.pathname==="/payment" || location.pathname==="/contactUs"|| location.pathname==="/developerCode"|| location.pathname==="/services"|| location.pathname==="/accountSettings")&&(<><Navbar /><Sidebar/></>)}
 
-
+<div className='ml-[264px] pl-[120px]'>
 <Routes>
 <Route exact path="/" element={<Onboarding/>} />
 <Route path="/onboarding0" element={<Onboarding0/>} />
@@ -54,7 +54,7 @@ function App() {
 <Route path="/developerCode" element={<DeveloperCode />} />
 <Route path="/accountSettings" element={<AccountSettings/>} />
 </Routes>
-
+</div>
 
 
 <div>
