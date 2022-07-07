@@ -44,7 +44,7 @@ const Navbar = ({clickNav, setClickNav}) => {
             <div className='w-full  h-[53px] z-30 bg-[#D9D9D9]  flex items-center justify-between px-3 md:px-6'>
                 <div className='flex items-center '>
                     <img className='cursor-pointer ' onClick={() => setShowNav(!showNav)} src={menuToggle} alt="Menu" />
-                    <p className='ml-[12px] font-medium text-[16px] leading-[19px]'>Home</p>
+                  <Link to ='/'>  <p className='ml-[12px] font-medium text-[16px] leading-[19px]'>Home</p></Link>
                 </div>
                 <div className='flex mr-[12px]'>
                     <img className='mr-[12px]  cursor-pointer' src={notification} alt="notification" />

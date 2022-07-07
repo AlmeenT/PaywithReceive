@@ -18,6 +18,8 @@ const MainNav = () => {
         <div  className='buttons flex ml-12 space-x-1 mt-3 lg:ml-80 lg:space-x-6 lg:mt-6'>
             <Link to='/login'><div className=' w-7 h-4 lg:w-24 lg:h-7 border-solid border-2 border-blue-800 text-center rounded-2xl text-blue-800'>Login</div></Link>
             <Link to='/signup'><div className=' w-14 h-4 lg:w-32 lg:h-7 bg-orange-400 rounded-2xl text-center'>Register Now</div></Link>
+            {/*this link belo as set on the mainNav so i can work on account settings...meju*/}
+            <Link to="/accountSettings">set</Link>
         </div>
 
     </div>

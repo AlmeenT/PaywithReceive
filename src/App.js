@@ -25,7 +25,12 @@ import Services from "./Pages/Services/Services";
 import AccountSettings from "./Pages/AccountSettings/AccountSettings"
 import Home from './Pages/Home/Home'
 import Support from './Pages/Support/Support';
-import AboutUs from './Pages/About us/AboutUs'
+import AboutUs from './Pages/About us/AboutUs';
+import API from "./Pages/AccountSettings/API"
+import Compilance from "./Pages/AccountSettings/Compilance"
+import Payout from "./Pages/AccountSettings/Payout"
+import Profile from "./Pages/AccountSettings/Profile"
+
 
 function App() {
   const location=useLocation()
@@ -34,9 +39,12 @@ function App() {
     <div className="App">
       {(location.pathname==="/dashboard" || location.pathname==="/transaction" || location.pathname==="/myAccount" || location.pathname==="/payment" || location.pathname==="/contactUs"|| location.pathname==="/developerCode"|| location.pathname==="/services"|| location.pathname==="/accountSettings")&&(<><Navbar /><Sidebar/></>)}
 
+        {/*setup for account settings in the side bar*/}     
+       {(location.pathname==="/profile" || location.pathname==="/api" || location.pathname==="/compilance" || location.pathname==="/payout" )&&(<><Navbar /><Sidebar/><AccountSettings /></>)}
 
 <Routes>
 <Route path="/" element={<Home />} />
+<Route path="/sidebar" element={<Sidebar />} />
 <Route path="/about" element={<AboutUs />} />
 <Route path="/support" element={<Support />} />
 <Route path="/signupLogin" element={<SignupOption />} />
@@ -55,6 +63,10 @@ function App() {
 <Route path="/services" element={<Services />} />
 <Route path="/developerCode" element={<DeveloperCode />} />
 <Route path="/accountSettings" element={<AccountSettings/>} />
+<Route path="/payout" element={<Payout/>} />
+<Route path="/compilance" element={<Compilance/>} />
+<Route path="/profile" element={<Profile/>} />
+<Route path="/api" element={<API/>} />
 </Routes>
 
 
@@ -67,3 +79,4 @@ function App() {
   );
 }
 export default App;
+
