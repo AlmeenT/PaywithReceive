@@ -48,14 +48,14 @@ const sidebarItems = [
 const Sidebar = () => {
     const navigate=useNavigate()
   return (
-    <div >
-        <nav className='fixed w-[264px] mt-[112px] top-0 left-0 h-full pt-[110px]' style={{backgroundImage:'linear-gradient(9.01deg, #2F3E91 26.77%, #FBB44A 128%)'}}>
-<ul>
+        <nav className='fixed w-[264px] pt-[222px] top-0 left-0 h-full overflow-y-auto ' style={{backgroundImage:'linear-gradient(9.01deg, #2F3E91 26.77%, #FBB44A 128%)'
+        }}>
+<ul className="">
   {sidebarItems.map((item, index) => (
-        <li  className={`flex items-center justify-between pl-[16px] pr-[22px] border-t-[2px] ${index===0 ? 'white' : 'border-[#292561]'} font-medium cursor-pointer text-white lg:text-[24px] lg:leading-[36px] py-[14px] `} 
+        <li  className={`flex items-center justify-between pl-[16px] pr-[22px] border-t-[2px] ${index===0 ? 'white' : 'border-[#292561]'} font-medium cursor-pointer text-white lg:text-[20px] lg:leading-[28px] py-[14px] `} 
         onClick={()=>navigate(item.url)} key={index}>
             <span>{item.text}</span>
-            <img src={item.icon} alt={item.text} />
+            <img className='w-4' src={item.icon} alt={item.text} />
         </li>
   ))}
   
@@ -82,7 +82,6 @@ Account Settings
 </li> */}
   </ul>
 </nav>
-    </div>
   )
 }
 
