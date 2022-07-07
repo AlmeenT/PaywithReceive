@@ -8,7 +8,7 @@ import DashboardSetup from '../../Components/dashboardAccountSetup/DashboardSetu
 const Dashboard = () => {
   return (
     //please dont remove this lg:ml-[264px] lg:mt-[112px] just write your own code in it. thank you
-    <div className='lg:ml-[264px] lg:mt-[112px]'>
+    <div className='lg:ml-[264px] lg:mt-[112px] pb-[100px]'>
       {/* write here */}
         <div className='flex items-center lg:pl-[120px]'>
             <img className='w-[80px] h-[80px] rounded-full' src={image} alt="Mypic" />
