@@ -58,7 +58,7 @@ input[type="password"]:focus {
 
 }
 
-button {
+.login button {
     background-color: #2F3E91;
     color: white;
     padding: 12px 12px;
@@ -73,7 +73,7 @@ button a{
     color: inherit;
 }
 
-button:hover {
+.login button:hover {
     background: rgb(147, 187, 255);
     border: none;
     text-decoration: none;

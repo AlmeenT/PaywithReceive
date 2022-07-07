@@ -1,0 +1,11 @@
+.dashboardSetupBox{
+    background: rgba(105, 205, 69, 0.78);
+    border: 1px solid #000000;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.dashboardSetupBoxRight{
+    background: #DADADA;
+    border: 1px solid #000000;
+    border-radius: 0px 20px 20px 0px;
+}

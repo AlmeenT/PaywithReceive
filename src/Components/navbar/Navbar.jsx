@@ -31,10 +31,10 @@ const Navbar = ({clickNav, setClickNav}) => {
 
 
   return (
-        <nav className='mb-12'>
-            <div className='w-full  h-[112px] z-30 bg-[#D9D9D9]  flex items-center justify-between lg:pl-[12px] lg:pr-[41px]'>
+        <nav className='mb-12 font-[DM-sans]'>
+            <div className='w-full fixed top-0 h-[80px] z-30 bg-[#D9D9D9]  flex items-center justify-between lg:pl-[12px] lg:pr-[41px]'>
                 <div className=''>
-                    <img className='cursor-pointer ' onClick={() => setShowNav(!showNav)} src={logo} alt="Menu" />
+                    <img className='cursor-pointer h-12 ' onClick={() => setShowNav(!showNav)} src={logo} alt="Menu" />
                 </div>
                 <div className='flex items-center space-x-[32px]'>
                         <div className='flex items-center'>
