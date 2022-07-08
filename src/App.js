@@ -32,6 +32,7 @@ import Payout from "./Pages/AccountSettings/Payout"
 import Profile from "./Pages/AccountSettings/Profile"
 
 
+
 function App() {
   const location=useLocation()
  console.log(location)
