@@ -82,7 +82,7 @@ const Comprofile = () => {
 
     {/*staff size*/}
        <select className='sinput' value={selected} onChange={staffChange}>
-       <option value={elected} selected disabled >Select Staff size</option>
+       <option  className="leo" value={elected} selected disabled >Select Staff size</option>
     {staffsizes.map(staffsize =>(<option key={staffsize.value} value={staffsize.value} >{staffsize.text}</option>))}
 </select>
 {/*industry*/}
