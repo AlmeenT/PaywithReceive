@@ -80,7 +80,7 @@ export default function Profile() {
  
   return (
     <div className='Mainn'>
-    <div className="mporm">
+    <div className="porm">
      
         <h1>Profile</h1>
   

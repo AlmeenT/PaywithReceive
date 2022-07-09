@@ -1,15 +1,23 @@
 
-import { Dropdown } from 'bootstrap';
 import React, { useState } from 'react'
+
 import "./comprofile.css"
 const Comprofile = () => {
+  const staffsizes =[
+   {value: 'one', text: '1'},
+   {value:'two', text:"2"},
+  ];
+  const[elected, setElected] = useState('')
+  const[selected, setSelected] = useState(elected)
   const [tname, setTname] = useState('');
   const [desc, setDesc] = useState('');
 
   // States for checking the errors
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
+ 
 
+  
    const TradingName = (e) => {
     setTname(e.target.value);
     setSubmitted(false);
@@ -17,6 +25,10 @@ const Comprofile = () => {
     const Tdescription = (e) => {
     setDesc(e.target.value);
     setSubmitted(false);
+    }
+    const staffChange = event =>{
+      console.log(event.target.value);
+      setSelected(event.target.value);
     }
     const handleSubmit = (e) => {
     e.preventDefault();
@@ -54,7 +66,7 @@ const Comprofile = () => {
   return (
  
     <div className='Painn'>
-    <div className='porm'>
+    <div className='mporm'>
     <h1>Profile</h1>
     {/* Calling to the methods */}
       
@@ -62,15 +74,31 @@ const Comprofile = () => {
         {successMessage()}
     <form className='style-form'>
         {/* Labels and inputs for form data */}
-        <input onChange={TradingName} className="aput"
+        <input onChange={TradingName} className="input"
           value={tname} type="text" placeholder='Trading name'/>
 
-          <input onChange={Tdescription} className="iput"
+          <input onChange={Tdescription} className="input"
           value={desc} type="text" placeholder='Description'/>
 
-          <select name="selectList" id="selectList">
-   <option value="option 1">Option 1</option>
-   <option value="option 2">Option 2</option>
+    {/*staff size*/}
+       <select className='sinput' value={selected} onChange={staffChange}>
+       <option value={elected} selected disabled >Select Staff size</option>
+    {staffsizes.map(staffsize =>(<option key={staffsize.value} value={staffsize.value} >{staffsize.text}</option>))}
+</select>
+{/*industry*/}
+       <select className='sinput' value={selected} onChange={staffChange}>
+       <option value={elected} selected disabled >Select industry</option>
+    {staffsizes.map(staffsize =>(<option key={staffsize.value} value={staffsize.value} >{staffsize.text}</option>))}
+</select>
+{/*staff size*/}
+       <select className='sinput' value={selected} onChange={staffChange}>
+       <option value={elected} selected disabled >Select category</option>
+    {staffsizes.map(staffsize =>(<option key={staffsize.value} value={staffsize.value} >{staffsize.text}</option>))}
+</select>
+{/*staff size*/}
+       <select className='sinput' value={selected} onChange={staffChange}>
+       <option value={elected} selected disabled >Select  Business</option>
+    {staffsizes.map(staffsize =>(<option key={staffsize.value} value={staffsize.value} >{staffsize.text}</option>))}
 </select>
 
           
