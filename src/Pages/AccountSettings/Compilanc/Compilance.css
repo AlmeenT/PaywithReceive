@@ -1,0 +1,23 @@
+.meju-compilance{
+    display:flex;
+    font-size: 10px;
+    margin-left: 300px;
+    margin-top: 5rem;
+}
+.nav-mopilance{
+ display: flex;
+ flex-direction: column;
+font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 36px;
+    gap:1rem;
+}
+.Colink {
+color: #292561;
+}
+
+.Colink-active {
+    color: #FAAF40;
+}

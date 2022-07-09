@@ -1,5 +1,5 @@
 import React from 'react'
-import AccountSettings from './AccountSettings'
+
 
 const Payout = () => {
   return (

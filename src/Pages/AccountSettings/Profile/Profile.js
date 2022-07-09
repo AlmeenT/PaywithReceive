@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import {useNavigate, NavLink} from "react-router-dom";
-import Navbar from '../../Components/navbar/Navbar';
 import './profile.css'
 
 export default function Profile() {
 
  const [name, setName] = useState('');
+  const [surname, setSurname] = useState('');
+ const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [user, setUser] = useState('');
+  
  
   // States for checking the errors
   const [submitted, setSubmitted] = useState(false);
@@ -26,15 +28,23 @@ export default function Profile() {
   };
  
   // Handling the password change
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
+  const handleUser = (e) => {
+    setUser(e.target.value);
+    setSubmitted(false);
+  };
+ const handleSurname = (e) => {
+    setSurname(e.target.value);
+    setSubmitted(false);
+  };
+ const handleUsername = (e) => {
+    setUsername(e.target.value);
     setSubmitted(false);
   };
  
   // Handling the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name === '' || email === '' || password === '') {
+    if (name === '' || email === '' || user === '' || surname === ''|| username === '') {
       setError(true);
     } else {
       setSubmitted(true);
@@ -70,7 +80,7 @@ export default function Profile() {
  
   return (
     <div className='Mainn'>
-    <div className="form">
+    <div className="porm">
      
         <h1>Profile</h1>
   
@@ -87,23 +97,29 @@ export default function Profile() {
         <div className='names'>
         <input onChange={handleName} className="aput"
           value={name} type="text" placeholder='First Name'/>
-          <input onChange={handleName} className="iput"
-          value={name} type="text" placeholder='Surname'/>
+
+          <input onChange={handleSurname} className="iput"
+          value={surname} type="text" placeholder='Surname'/>
+
           </div>
  
         <label className="label">Email</label>
-        <input onChange={handleEmail} className="input"
-          value={email} type="email" />
+        <input onChange={handleEmail}
+          value={email} type="email" placeholder='Enter email address'/>
  
-        <label className="label">Password</label>
-        <input onChange={handlePassword} className="input"
-          value={password} type="password" />
+        <label className="label">Username</label>
+        <input onChange={handleUsername} className="input"
+          value={username} type="text" placeholder='Username' />
+
+           <label className="label">User ID</label>
+        <input onChange={handleUser} className="input"
+          value={user} type="text" placeholder='User ID' />
  
         
       </form>
      
     </div>
-     <button onClick={handleSubmit} className="batn" type="submit">
+     <button onClick={handleSubmit} className="patn" type="submit">
           Save changes
         </button>
     </div>

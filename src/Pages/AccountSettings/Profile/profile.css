@@ -1,0 +1,95 @@
+
+.porm{
+    margin-left: 630px;
+    display: flex;
+    flex-direction: column;
+    background:#292561;
+    border-radius: 20px;
+    padding: 40px 10px 30px;
+    margin-top: 0.5rem;
+    width: max-content;
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+    padding-right: 2rem;
+    }
+
+.style-form{
+    display:flex;
+    flex-direction: column;
+        gap:0.5rem;
+   color: white;
+    
+}
+.porm h1{
+    text-align: center;
+    margin-left: 36%;
+    color: #FAAF40;
+    margin-top: -2.5rem;
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 66px;
+        width: 20%;
+   
+   
+}
+.input{
+    width: 40ch;
+        max-width: 100%;
+        height: 35px;
+        border-radius: 10px;
+        color: black;
+        padding-left: 0.4rem;
+}
+.aput{
+    padding-left: 0.4rem;
+     width: 18ch;
+    height:35px;
+    max-width: 100%;
+    border-radius: 10px;
+    color: black;
+}
+.iput{
+    padding-left: 0.4rem;
+    margin-left: 15px;
+     width: 20.5ch;
+    height:35px;
+    max-width: 100%;
+    border-radius: 10px;
+    color: black;
+
+}
+.porm input[type=email]{
+    width:40ch;
+    max-width:100%;
+    height: 35px;
+        border-radius: 10px;
+        color:black;
+     padding-right: rem;
+}
+
+    
+.porm input[type=text]::placeholder{
+
+    font-family: 'Inter';
+        font-style: normal;
+        color: rgba(17, 17, 19, 0.63);
+}
+.porm input[type=email]::placeholder {
+  
+    font-family: 'Inter';
+    font-style: normal;
+    color: rgba(17, 17, 19, 0.63);
+}
+.Mainn .patn{
+    width: max-content;
+background: #292561;
+margin-left: 795px;
+margin-top: 2rem;
+font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #D4D3DF;
+}
