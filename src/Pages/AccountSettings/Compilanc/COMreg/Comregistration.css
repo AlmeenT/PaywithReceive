@@ -1,0 +1,36 @@
+.Rainn .mporm {
+    margin-left: 630px;
+    display: flex;
+    flex-direction: column;
+    background: #292561;
+    border-radius: 20px;
+    padding: 40px 10px 30px;
+    margin-top: -16rem;
+    width: max-content;
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+    padding-right: 2rem;
+}
+.mporm .dress{
+    margin-left: 6rem;
+}
+.mporm .address {
+    color: #FAAF40;
+    padding-top: 2rem;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+    margin-top: -2rem;
+}
+.Rainn .patn {
+    width: max-content;
+    background: #292561;
+    margin-left: 795px;
+    margin-top: 2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #D4D3DF;
+}

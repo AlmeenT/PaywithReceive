@@ -1,0 +1,10 @@
+.mporm .docfile {
+    display: block;
+    width: 120px;
+    height: 30px;
+    background-color: white;
+}
+
+.mporm input[type=file] {
+    display: none;
+}
