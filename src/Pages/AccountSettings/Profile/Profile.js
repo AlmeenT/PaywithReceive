@@ -60,7 +60,7 @@ export default function Profile() {
         style={{
           display: submitted ? '' : 'none',
         }}>
-        <h1>User {name} successfully registered!!</h1>
+        <h3 className='save'>User {name} successfully registered!!</h3>
       </div>
     );
   };
@@ -73,7 +73,7 @@ export default function Profile() {
         style={{
           display: error ? '' : 'none',
         }}>
-        <h1>Please enter all the fields</h1>
+        <h3 className='save'>Please enter all the fields</h3>
       </div>
     );
   };

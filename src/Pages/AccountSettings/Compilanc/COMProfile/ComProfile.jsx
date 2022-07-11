@@ -46,7 +46,7 @@ const Comprofile = () => {
         style={{
           display: submitted ? '' : 'none',
         }}>
-        <h1>User {tname} successfully registered!!</h1>
+        <h3 className='save'>User {tname} successfully registered!!</h3>
       </div>
     );
     }
@@ -58,7 +58,7 @@ const Comprofile = () => {
         style={{
           display: error ? '' : 'none',
         }}>
-        <h1>Please enter all the fields</h1>
+        <h3 className='save'>Please enter all the fields</h3>
       </div>
     );
   };

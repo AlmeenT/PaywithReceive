@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import {useNavigate, NavLink} from "react-router-dom";
 import './comdoc.css'
 const Comdocuments = (props) => {
   const fileInput = React.useRef(null);
@@ -28,28 +29,6 @@ const Comdocuments = (props) => {
   };
   
 
-const errorMessage = () => {
-    return (
-      <div
-        className="error"
-        style={{
-          display: error ? '' : 'none',
-        }}>
-        <h1>Please enter all the fields</h1>
-      </div>
-    );
-  };
-   const successMessage = () => {
-    return (
-      <div
-        className="success"
-        style={{
-          display: submitted ? '' : 'none',
-        }}>
-        <h1>User {} successfully registered!!</h1>
-      </div>
-    );
-  };
 
   return (
     
@@ -60,21 +39,27 @@ const errorMessage = () => {
  
       {/* Calling to the methods */}
       
-        {errorMessage()}
-        {successMessage()}
+      
    
  
      <form className='style-form'>
      
-     <button  onClick={hanClick}>choose file</button>
-        <input  type="file" ref={fileInput} onChange={handleChange}  className='docfile'/>
+     {/*<button  onClick={hanClick}>choose file</button>*/}
+        <label className="label">Company Certificate</label>
+        <input  type="file"  onChange={handleChange}  className='docfile'/>
+         <label className="label">Government Issue card</label>
+         <input  type="file"  onChange={handleChange}  className='docfile'/>
+          <label className="label">Utility Bill</label>
+          <input  type="file"  onChange={handleChange}  className='docfile'/>
        
          
           </form>
           </div>
-           <button onClick={handleSubmit} className="patn" type="submit">
+            <NavLink to ="/payout" className={({isActive}) => (isActive ? "link-active" : "link")}>
+    Payout
+    <button onClick={handleSubmit} className="patn" type="submit">
           Save changes
-        </button>
+        </button></NavLink>
     </div>
   )
 }

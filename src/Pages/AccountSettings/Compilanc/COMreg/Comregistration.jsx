@@ -48,7 +48,7 @@ const Tbus = (e) => {
         style={{
           display: submitted ? '' : 'none',
         }}>
-        <h1>User {} successfully registered!!</h1>
+        <h3 className='save'>User {} successfully registered!!</h3>
       </div>
     );
     }
@@ -60,7 +60,7 @@ const Tbus = (e) => {
         style={{
           display: error ? '' : 'none',
         }}>
-        <h1>Please enter all the fields</h1>
+        <h3 className='save'>Please enter all the fields</h3>
       </div>
     );
   };

@@ -60,7 +60,7 @@ const errorMessage = () => {
         style={{
           display: error ? '' : 'none',
         }}>
-        <h1>Please enter all the fields</h1>
+        <h3 className='save'>Please enter all the fields</h3>
       </div>
     );
   };
@@ -71,7 +71,7 @@ const errorMessage = () => {
         style={{
           display: submitted ? '' : 'none',
         }}>
-        <h1>User {cemail} successfully registered!!</h1>
+        <h3 className='save'>User {cemail} successfully registered!!</h3>
       </div>
     );
   };
