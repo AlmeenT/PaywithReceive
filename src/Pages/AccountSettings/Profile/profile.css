@@ -93,6 +93,12 @@ font-family: 'Poppins';
     font-size: 14px;
     color: #D4D3DF;
 }
+.Mainn .patn:hover{
+        color:#292561;
+        background: transparent;
+        border: 3px solid;
+        border-color: #292561;
+}
 .save{
     color:red;
 }

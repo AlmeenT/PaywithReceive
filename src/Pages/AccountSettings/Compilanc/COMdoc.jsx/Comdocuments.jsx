@@ -34,7 +34,7 @@ const Comdocuments = (props) => {
     
      <div className='Painn'>
     <div className="mporm">
-     <h1>Documents</h1>
+     <h1 className='docv'>Documents</h1>
   
  
       {/* Calling to the methods */}

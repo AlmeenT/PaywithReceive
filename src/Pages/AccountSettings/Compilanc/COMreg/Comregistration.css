@@ -34,3 +34,9 @@
     font-size: 14px;
     color: #D4D3DF;
 }
+.Rainn .patn:hover {
+    color: #292561;
+    background: transparent;
+    border: 3px solid;
+    border-color: #292561;
+}

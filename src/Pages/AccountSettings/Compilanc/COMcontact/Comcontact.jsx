@@ -106,11 +106,11 @@ const errorMessage = () => {
 
           <label className="label">Phone Number</label>
         <input onChange={handleUsername} className="input"
-          value={username} type="text" placeholder='Username' />
+          value={username} type="text" placeholder='Enter phone number' />
 
            <label className="label">Website(optional)</label>
         <input onChange={handleUser} className="input"
-          value={user} type="text" placeholder='User ID' />
+          value={user} type="text" placeholder='enter website' />
           </form>
           </div>
            <button onClick={handleSubmit} className="patn" type="submit">

@@ -15,9 +15,10 @@ font-family: 'DM Sans';
     gap:1rem;
 }
 .Colink {
-color: #292561;
+    color: rgba(41, 37, 97, 0.8);
 }
 
 .Colink-active {
-    color: #FAAF40;
+   
+    color: #292561;
 }

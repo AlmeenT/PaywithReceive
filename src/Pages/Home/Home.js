@@ -22,7 +22,7 @@ import pay8 from "../../Assets/Images/Payment Method (8).png"
 import pay9 from "../../Assets/Images/Payment Method (9).png"
 import pay10 from "../../Assets/Images/Payment Method (10).png"
 import pay11 from "../../Assets/Images/Payment Method (11).png"
-
+import mainhome from "../../Assets/Images/hero section.png"
 
 
 const Home = () => {
