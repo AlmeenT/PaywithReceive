@@ -18,6 +18,7 @@ const AccountSettings = () => {
      <NavLink to ="/comprofile" className={({isActive}) => (isActive ? "link-active" : "link")}>
    Compilance
     </NavLink>
+
      <NavLink to ="/payout" className={({isActive}) => (isActive ? "link-active" : "link")}>
     Payout
     </NavLink>

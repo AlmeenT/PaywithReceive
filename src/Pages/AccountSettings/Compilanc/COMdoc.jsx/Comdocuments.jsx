@@ -1,49 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './comdoc.css'
-const Comdocuments = () => {
+const Comdocuments = (props) => {
+  const fileInput = React.useRef(null);
  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
-  const [cemail, setCemail] = useState('');
-  const [check, setCheck] = useState(false);
-  const [scemail, setScemail] = useState('');
-   const [username, setUsername] = useState('');
-    const [user, setUser] = useState('');
 
-   const handleCemail = (e) => {
-    setCemail(e.target.value);
-    setSubmitted(false);
-  };
-
-    const handleScemail = (e) => {
-    setScemail(e.target.value);
-    setSubmitted(false);
-  };
-
-  const handleCheck = (e) =>{
-    setCheck(e.target.value);
-   setSubmitted(false);
-  
-   };
-   
+     const hanClick = (e) =>{
+      e.preventDefault();
+      fileInput.current.click();
+     };
+    const handleChange= (e) => {
+         const fileUploaded = e.target.files[0];
+         props.handleFile(fileUploaded);
+      }
+    
   
   
-  const handleUser = (e) => {
-    setUser(e.target.value);
-    setSubmitted(false);
-  };
-   const handleUsername = (e) => {
-    setUsername(e.target.value);
-    setSubmitted(false);
-  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if ( cemail === '' || check === false & scemail === '') {
+    if (fileInput===' ') {
       setError(true);
     }
-      else if (scemail === ''& check === true){
-         setSubmitted(true);
-          setError(false);
-      }
     else {
       setSubmitted(true);
       setError(false);
@@ -69,10 +46,11 @@ const errorMessage = () => {
         style={{
           display: submitted ? '' : 'none',
         }}>
-        <h1>User {cemail} successfully registered!!</h1>
+        <h1>User {} successfully registered!!</h1>
       </div>
     );
   };
+
   return (
     
      <div className='Painn'>
@@ -87,28 +65,11 @@ const errorMessage = () => {
    
  
      <form className='style-form'>
-      <label className="label">General Email</label>
-        <input onChange={handleCemail} 
-          value={cemail} type="file" placeholder='Enter email address' className='docfile'/>
-
-           <label className="label">Support Email<span>*</span></label>
-        <input onChange={handleScemail}
-          value={scemail} type="email" placeholder='Enter support email'/>
-          <div>
-            <input onChange={handleCheck}
-          value={check} type="checkbox"/>
-          <label className="label">Use general email</label>
+     
+     <button  onClick={hanClick}>choose file</button>
+        <input  type="file" ref={fileInput} onChange={handleChange}  className='docfile'/>
+       
          
-          </div>
-
-
-          <label className="label">Phone Number</label>
-        <input onChange={handleUsername} className="input"
-          value={username} type="text" placeholder='Username' />
-
-           <label className="label">Website(optional)</label>
-        <input onChange={handleUser} className="input"
-          value={user} type="file" placeholder='User ID' />
           </form>
           </div>
            <button onClick={handleSubmit} className="patn" type="submit">

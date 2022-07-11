@@ -1,8 +1,5 @@
-.mporm .docfile {
-    display: block;
-    width: 120px;
-    height: 30px;
-    background-color: white;
+.Painn .docfile{
+    display: none;
 }
 
 .mporm input[type=file] {
