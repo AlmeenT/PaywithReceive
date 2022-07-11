@@ -45,7 +45,7 @@ const Login = () => {
    // e.preventDefault()
    sessionStorage.setItem("userDetails", JSON.stringify({ ...form }));
 
-   window.location = "/";
+   window.location = "/dashboard";
    reset();
  };
 

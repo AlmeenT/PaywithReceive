@@ -1,45 +1,57 @@
-footer{
+footer {
     /* styling for the footer background*/
-    background: #2F3E91;
-    width:100vw;
-    height: 6rem;    
+    background: #292561;
+    width: 100vw;
+    height: 5rem;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 2rem;
+    border-radius: 300px 0px 0px 0px;
 }
+
+
 /* class for the react icons*/
-.leoo{
+
+.leoo {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-   margin-bottom: 0.8rem;
-   position: relative;
-   top: 1rem;
-
+    gap: 1.7rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    top: 1rem;
 }
-.leoo a{
-    background: white;
-    color: var(--color-white);
-    font-size: 1.3rem;
+
+.leoo a {
+    background: #333f8f;
+    color: white;
+    font-size: 1.1rem;
     padding: 0.2rem;
-    border-radius: 0.7rem;
+    border-radius: 50%;
     display: flex;
-    border: 1px solid transparent;
-
 }
-.leoo a:hover{
+
+.leoo a:hover {
     background: transparent;
     color: red;
     border-color: var(--color-bg);
-
 }
+
+
 /*class for copyright*/
-.copyright{
+
+.copyright {
     color: white;
     position: relative;
-   top: 1rem;
+    top: 1rem;
 }
 
 .footdet {
     color: white;
+}
+
+@media screen and (min-width: 350px and max-width: 1040px) {   
+    footer {
+        width:100vw;
+    }
+
 }
