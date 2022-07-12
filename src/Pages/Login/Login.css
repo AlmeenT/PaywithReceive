@@ -83,6 +83,13 @@ button a{
     
 }
 
+.p {
+    margin-top: 5%;
+    display : flex;
+    margin-left: 20%;
+    word-spacing: 2px;
+}
+
 p a {
     text-decoration: none;
 

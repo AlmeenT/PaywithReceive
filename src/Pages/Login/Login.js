@@ -140,11 +140,11 @@ const Login = () => {
           </p>
         </div>
         <div className="login">
-          <button>Login</button>
+          <button className='Login'>Login</button>
         </div>
         <p className="p">
           Do not have an account with us?
-          <Link to="/signup"> Register Now </Link>
+          <Link to="/signup"><p className='p2'> Register Now </p></Link>
         </p>
       </form>
     </div>
