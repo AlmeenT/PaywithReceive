@@ -25,7 +25,17 @@ import Services from "./Pages/Services/Services";
 import AccountSettings from "./Pages/AccountSettings/AccountSettings"
 import Home from './Pages/Home/Home'
 import Support from './Pages/Support/Support';
-import AboutUs from './Pages/About us/AboutUs'
+import AboutUs from './Pages/About us/AboutUs';
+import API from "./Pages/AccountSettings/API/API"
+import Compilance from "./Pages/AccountSettings/Compilanc/Compilance"
+import Payout from "./Pages/AccountSettings/Payout/Payout"
+import Profile from "./Pages/AccountSettings/Profile/Profile"
+import Comprofile from './Pages/AccountSettings/Compilanc/COMProfile/ComProfile';
+import Comcontact from './Pages/AccountSettings/Compilanc/COMcontact/Comcontact';
+import Comdocuments from './Pages/AccountSettings/Compilanc/COMdoc.jsx/Comdocuments';
+import Comregistration from './Pages/AccountSettings/Compilanc/COMreg/Comregistration';
+
+
 
 function App() {
   const location=useLocation()
@@ -34,9 +44,14 @@ function App() {
     <div className="App">
       {(location.pathname==="/dashboard" || location.pathname==="/transaction" || location.pathname==="/myAccount" || location.pathname==="/payment" || location.pathname==="/contactUs"|| location.pathname==="/developerCode"|| location.pathname==="/services"|| location.pathname==="/accountSettings")&&(<><Navbar /><Sidebar/></>)}
 
-
+        {/*setup for account settings in the side bar*/}     
+       {(location.pathname==="/profile" || location.pathname==="/api" || location.pathname==="/compilance" || location.pathname==="/payout" )&&(<><Navbar /><Sidebar/><AccountSettings /></>)}
+       
+        {/*setup for compilance in account settings in the side bar*/}     
+         {( location.pathname==="/comprofile" || location.pathname==="/comcontact" || location.pathname==="/comdocuments" || location.pathname==="/comregistration" )&&(<><Navbar /><Sidebar/><AccountSettings /><Compilance/></>)}
 <Routes>
 <Route path="/" element={<Home />} />
+<Route path="/sidebar" element={<Sidebar />} />
 <Route path="/about" element={<AboutUs />} />
 <Route path="/support" element={<Support />} />
 <Route path="/signupLogin" element={<SignupOption />} />
@@ -55,6 +70,14 @@ function App() {
 <Route path="/services" element={<Services />} />
 <Route path="/developerCode" element={<DeveloperCode />} />
 <Route path="/accountSettings" element={<AccountSettings/>} />
+<Route path="/payout" element={<Payout/>} />
+<Route path="/compilance" element={<Compilance/>} />
+<Route path="/profile" element={<Profile/>} />
+<Route path="/api" element={<API/>} />
+<Route path="/comprofile" element={<Comprofile/>} />
+<Route path="/comcontact" element={<Comcontact/>} />
+<Route path="/comdocuments" element={<Comdocuments/>} />
+<Route path="/comregistration" element={<Comregistration/>} />
 </Routes>
 
 
@@ -67,3 +90,4 @@ function App() {
   );
 }
 export default App;
+

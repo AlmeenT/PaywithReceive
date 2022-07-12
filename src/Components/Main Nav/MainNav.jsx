@@ -19,7 +19,6 @@ const MainNav = () => {
             <Link to='/login'><button className='buttons w-7 h-4 lg:w-24 lg:h-7 border-solid border-2 border-blue-800 text-center rounded-2xl text-blue-800'>Login</button></Link>
             <Link to='/signup'><button className='buttons w-14 h-4 lg:w-32 lg:h-7 bg-orange-400 rounded-2xl text-center'>Register Now</button></Link>
         </div>
-
     </div>
   )
 }
