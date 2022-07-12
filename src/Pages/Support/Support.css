@@ -1,0 +1,100 @@
+.call {
+    height: 20vh;
+    width: 100vw;
+}
+
+.main {
+    background: #9C9C9C;
+}
+
+.mainHead {
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #0F2C95;
+}
+
+.supportContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.otherContainer {
+    justify-content: center;
+    width: 333px;
+    height: 354.01px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 3%;
+    text-align: center;
+    line-spacing: 10%;
+}
+
+.iconContainer {
+    border-radius:50%;
+    width:93px;
+    height: 93px;
+    background: #817A7A;
+    margin-left:35%;
+    margin-top: 10%;
+}
+
+.iconContainer .supportIcon{
+    position:relative;
+    top: 30%;
+    left: 30%;
+}
+
+.iconContainer .supportIcon1{
+    position:relative;
+    top: 35%;
+    left: 30%;
+}
+
+.iconContainer .supportIcon2{
+    position:relative;
+    top: 20%;
+    left: 20%;
+}
+
+.supportIntro {
+    color: #312B2B;
+    font-size: 24px;
+    line-height:31px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sp{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #312B2B;
+    word-spacing: 3px;
+    margin:25px 40px 15px 40px;
+}
+
+.Sbutton, .Sbutton1 {
+    width: 45%;
+    height: 8%;
+    border: solid 1px #292561;
+    border-radius: 10px;
+    text-align: center;
+    color: #292561;
+    margin-top: 10%;
+}
+
+@media screen and (min-width:400px and max-width: 700px) {
+    .supportContainer {
+        flex-direction: column;    
+    }
+}

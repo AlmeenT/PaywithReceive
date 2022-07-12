@@ -1,21 +1,12 @@
 import React,{useState} from 'react'
-import downArrow from '../../Assets/Images/down-arrow.svg'
-import menuToggle from '../../Assets/Images/menuToggle.svg'
-import notification from '../../Assets/Images/notification.svg'
-import profileIcon from '../../Assets/Images/profileIcon.svg'
-import home from '../../Assets/Images/home.svg'
-import order from '../../Assets/Images/order.svg'
-import makePayments from '../../Assets/Images/makePayments.svg'
-import balance from '../../Assets/Images/balance.svg'
-import compliant from '../../Assets/Images/compliant.svg'
-import Invoice from '../../Assets/Images/Invoice.svg'
-import payouts from '../../Assets/Images/payouts.svg'
-import refunds from '../../Assets/Images/refunds.svg'
-import transfer from '../../Assets/Images/transfer.svg'
-import product from '../../Assets/Images/product.svg'
-import transaction from '../../Assets/Images/transaction.svg'
-import customer from '../../Assets/Images/customer.svg'
-import navdropdown from '../../Assets/Images/navdropdown.svg'
+// import menuToggle from '../../Assets/Images/menuToggle.svg'
+// import notification from '../../Assets/Images/notification.svg'
+// import profileIcon from '../../Assets/Images/profileIcon.svg'
+// import navdropdown from '../../Assets/Images/navdropdown.svg'
+import logo from '../../Assets/Images/NavbarIcons/logo.png'
+import walletdownIcon from '../../Assets/Images/NavbarIcons/walletdownIcon.svg'
+import profile from '../../Assets/Images/NavbarIcons/profile.svg'
+import {IoMdNotifications} from 'react-icons/io'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({clickNav, setClickNav}) => {
@@ -40,17 +31,35 @@ const Navbar = ({clickNav, setClickNav}) => {
 
 
   return (
-        <nav className='mb-12'>
-            <div className='w-full  h-[53px] z-30 bg-[#D9D9D9]  flex items-center justify-between px-3 md:px-6'>
-                <div className='flex items-center '>
-                    <img className='cursor-pointer ' onClick={() => setShowNav(!showNav)} src={menuToggle} alt="Menu" />
-                  <Link to ='/'>  <p className='ml-[12px] font-medium text-[16px] leading-[19px]'>Home</p></Link>
+        <nav className='mb-12 font-[DM-sans]'>
+            <div className='w-full fixed top-0 h-[80px] z-30 bg-[#D9D9D9]  flex items-center justify-between lg:pl-[12px] lg:pr-[41px]'>
+                <div className=''>
+                    <img className='cursor-pointer h-12 ' onClick={() => setShowNav(!showNav)} src={logo} alt="Menu" />
                 </div>
-                <div className='flex mr-[12px]'>
-                    <img className='mr-[12px]  cursor-pointer' src={notification} alt="notification" />
+                <div className='flex items-center space-x-[32px]'>
+                        <div className='flex items-center'>
+                            <p className='mr-[8px] text-[#292561] text-[16px] leading-[20px] '>Wallet</p>
+                            <img src={walletdownIcon} alt="wallet" />
+                        </div>
+                        <div className='w-full'>
+                        <div className='flex items-center w-[52px] h-[32px] bg-[#292561] rounded-[24px] '>
+                            <div className='w-[24px] h-[24px] bg-white rounded-full'></div>
+                        </div>
+                        </div>
+                        <div className='w-full relative'>
+                            <IoMdNotifications className=" fill-[#292561] w-[30px] h-[30px]" />
+                            <div className='px-[2px] absolute right-[3px] top-[2px] bg-[#D9D9D9] rounded-full'>
+                            <div className='px-[5px] font-semibold text-[10px] text-red-600 bg-[#292561] rounded-full'>1</div>
+                            </div>
+                        </div>
+                        <div className='w-full'>
+                            <img className=' w-[30px] h-[30px]' src={profile} alt="profile" />
+                        </div>
+                </div>
+                    {/* <img className='mr-[12px]  cursor-pointer' src={notification} alt="notification" />
                     <img className='mr-[12px]  cursor-pointer' src={profileIcon} alt="profile" />
-                    <img onClick={()=> setClickNav(!clickNav)} className=' cursor-pointer ' src={navdropdown} alt="down arrow" />
-                </div>
+                    <img onClick={()=> setClickNav(!clickNav)} className=' cursor-pointer ' src={navdropdown} alt="down arrow" /> */}
+               
             </div>
 
                 {/* mobile dropdown section */}

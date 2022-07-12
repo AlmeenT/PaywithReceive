@@ -44,7 +44,7 @@ const Home = () => {
           </p>
            </article>
            <div className="Part3">
-         <a href='#' className='anchor'>Get Started</a>
+         <a href='/signup' className='anchor'>Get Started</a>
          </div>
           </div>
             

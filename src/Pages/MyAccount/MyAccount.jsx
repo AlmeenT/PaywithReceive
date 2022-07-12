@@ -2,7 +2,7 @@ import React from 'react'
 
 const MyAccount = () => {
   return (
-    <div className='ml-[200px] px-6'>MyAccount</div>
+    <div className='lg:ml-[264px] lg:mt-[112px]'>MyAccount</div>
   )
 }
 
