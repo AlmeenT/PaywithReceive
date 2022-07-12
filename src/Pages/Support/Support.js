@@ -25,7 +25,7 @@ const Support = () => {
                     <div className='iconContainer'><img className='supportIcon' alt='' src={search}/></div>
                     <h2 className='supportIntro'> Search the help desk</h2>
                     <p className='sp'>Get quick answers to any questions about Receive</p>
-                    <button className='Sbutton' onClick={()=> setShow(true)}>find answer</button>
+                    <button className='Sbutton1' onClick={()=> setShow(true)}>find answer</button>
                     <Search onClose={() => setShow(false)} show={show} />
                 </div>
                 <div className='otherContainer'>
