@@ -85,13 +85,18 @@ input[type="password"]:focus {
 }
 .remember{
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 }
+
+.forgot span {
+    margin-left: 10px;
+}
+
 .pass{
    
     margin-top: 0px;
 }
-button {
+.Login {
     background-color: #f7941d;
     color: white;
     padding: 12px 12px;
@@ -107,13 +112,20 @@ button a{
 
 }
 
-button:hover {
+.Login:hover {
     background: rgb(147, 187, 255);
     border: none;
     font-family: "Lato", sans-serif;
     font-size: 15px;
     color: white;
     
+}
+
+.p {
+    margin-top: 5%;
+    display : flex;
+    margin-left: 20%;
+    word-spacing: 2px;
 }
 
 p a {
@@ -125,6 +137,12 @@ p a:hover {
     text-decoration: darkcyan;
 
 }
+
+
+.pass, .p2 {
+    color: #2F3E91;
+}
+
 
 @media screen and (max-width: 600px) {
 
@@ -180,18 +198,6 @@ p a:hover {
         font-family: 'Libre Baskerville', serif !important;
     }
 
-<<<<<<< HEAD
-@media screen and (min-width: 350px and max-width: 550px) {
-    input[type="email"],
-    input[type="password"] {
-        margin-top: 20px;
-        color: #010b0c;
-        width: 50vw;
-        padding: 12px 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-=======
     .re,
     .ceive {
         padding-top: 38%;
@@ -202,7 +208,6 @@ p a:hover {
 
         padding-top: 1vh;
 
->>>>>>> 53d54994ab9b41f23ec6f2a6e6a0f35865a9c3ed
     }
 
     .container {

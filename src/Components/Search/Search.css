@@ -1,0 +1,75 @@
+.searchModal {
+    width: 500px;
+    height: 550px;
+    background:white;
+    position: fixed;
+    top:10%;
+    left:30%;
+    right:0;
+    bottom:0;
+    z-index:10;
+    border: solid 1px #312D64;
+}
+
+.searchHeader {
+    height: 76px;
+    background: #312D64;
+    display: flex;
+}
+
+.searchForm {
+    display: flex;
+    background: #13103C;
+    width: 150px;
+    height: 30px;
+    margin-top: 4%;
+    margin-left:5%;
+    border-radius: 19px;
+}
+
+.searchicon {
+    width:15px;
+    height: 15px;
+    margin-top:6%;
+    margin-left:10%;
+}
+
+.searchBox {
+    background: #13103C;
+    width: 100px;
+    height: 20px;
+    margin-top: 4%;
+    margin-left:5%;
+}
+
+.searchBox::placeholder {
+    color: #B9702D;
+}
+
+.searchBox::value {
+    color: white;
+}
+
+.contactDiv {
+    display: flex;
+    margin-top:5%;
+    margin-left: 32%;
+}
+
+.smallchat {
+    width:15px;
+    height:15px;
+    margin-top:6%;
+    margin-left:10%;
+}
+
+.chatText {
+    color:white;
+    width: 100px;
+}
+
+@media screen and (min-width: 400px and max-width:900px) {
+    .searchModal {
+        left:10%;
+    }
+}
