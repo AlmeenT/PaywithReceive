@@ -49,7 +49,10 @@ const Signup = () => {
     } else {
         setFormValid(false)
     }
-}, [form])
+}, [form.username,
+    form.email,
+    form.password,
+    form.confirmPassword])
 
   const handleChange = (e) => {
     setForm ({
@@ -70,7 +73,7 @@ const Signup = () => {
   const password = watch("password")
 
 
-
+let userDetails = JSON.parse(sessionStorage.getItem("userDetails"))
 
 
   return (
@@ -96,6 +99,7 @@ const Signup = () => {
                 trigger('username');
               }}
               />
+              <h3> { userDetails.username } </h3>
               {errors.username && (<small>{errors.username.message}</small>)}
             </div>
 

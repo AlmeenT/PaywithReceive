@@ -24,13 +24,47 @@ import DeveloperCode from "./Pages/DeveloperCode/DeveloperCode"
 import Services from "./Pages/Services/Services";
 import AccountSettings from "./Pages/AccountSettings/AccountSettings"
 import Home from './Pages/Home/Home'
+// import PaymentDetails from './Pages/PaymentDetails/PaymentDetails';
+
+// import PaymentCard from '../src//Assets/Images/card-payment.png';
+// import BankTransfer from '../src/Assets/Images/Transfer-1 1.png';
+// import Crypto from '../src/Assets/Images/crypto-1.png';
+// import USSDCODE from '../src/Assets/Images/ussd.png';
+import CardPaymentModal from './Components/Modal/CardPaymentModal/CardPaymentModal';
+
+
+
 
 function App() {
+//   const cardLists = [
+//     {
+//         image: PaymentCard,
+//         name: "Card Payment",
+        
+//     },
+//     {
+//         image: BankTransfer,
+//         name: "Bank Transfer",
+//     },
+//     {
+//         image: Crypto,
+//         name: "Cryptocurrency",
+//     },
+//     {
+//         image: USSDCODE,
+//         // tittle: '*USSD#',
+//         name: "USSD",
+//     },
+
+// ]
   const location=useLocation()
  console.log(location)
   return (
     <div className="App">
       {(location.pathname==="/dashboard" || location.pathname==="/transaction" || location.pathname==="/myAccount" || location.pathname==="/payment" || location.pathname==="/contactUs"|| location.pathname==="/developerCode"|| location.pathname==="/services"|| location.pathname==="/accountSettings")&&(<><Navbar /><Sidebar/></>)}
+
+
+      
 
 
 <Routes>
@@ -45,6 +79,8 @@ function App() {
 <Route path="/busDetails5" element={<BusinessDetails5 />} />
 <Route path="/dashboard" element={<Dashboard />} />
 <Route path="/payment" element={<Payment />} />
+<Route path="/cardPaymentModal" element={<CardPaymentModal />} />
+{/* <Route path="/payment/:name" element={<PaymentDetails  cardLists={cardLists}/>} /> */}
 <Route path="/transaction" element={<Transaction />} />
 <Route path="/myAccount" element={<MyAccount />} />
 <Route path="/contactUs" element={<ContactUs />} />
