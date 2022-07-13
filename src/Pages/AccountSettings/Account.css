@@ -1,0 +1,55 @@
+.settings{
+    display: flex;
+        flex-direction: row;
+margin-left: 300px;
+margin-top: -3rem;
+gap:1.5rem;
+
+}
+.settings img{
+    margin-top: 1rem;
+    height:38px;
+}
+.settings .topic{
+    display: flex;
+        align-items: flex-end;
+        text-align: center;
+font-family: 'DM Sans';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 36px;
+    line-height: 81px;
+    color: #292561;
+}
+.reku{
+    display: flex;
+    flex-direction: row;
+    background: #292561;
+        border-radius: 10px;
+    margin-top: 0.5rem;
+margin-left: 300px;
+padding: 0.5rem 2rem;
+      
+        width: max-content;
+          font-size: 40px;       
+}
+.peku{
+    display: flex;
+        flex-direction: row;
+   
+}
+.peku a{
+    font-size: 25px;
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        align-items: flex-end;
+            text-align: center;
+            padding: 0 5.5rem;
+}
+.link{
+    color: #FAAF40;
+}
+.link-active{
+    color:#FFFFFF;
+}

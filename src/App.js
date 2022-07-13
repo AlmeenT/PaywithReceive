@@ -25,19 +25,65 @@ import Services from "./Pages/Services/Services";
 import AccountSettings from "./Pages/AccountSettings/AccountSettings"
 import Home from './Pages/Home/Home'
 import Support from './Pages/Support/Support';
-import AboutUs from './Pages/About us/AboutUs'
 import ForgotPassword2 from './Pages/Forgot Password2/ForgotPassword2';
+import AboutUs from './Pages/About us/AboutUs';
+import API from "./Pages/AccountSettings/API/API"
+import Compilance from "./Pages/AccountSettings/Compilanc/Compilance"
+import Payout from "./Pages/AccountSettings/Payout/Payout"
+import Profile from "./Pages/AccountSettings/Profile/Profile"
+import Comprofile from './Pages/AccountSettings/Compilanc/COMProfile/ComProfile';
+import Comcontact from './Pages/AccountSettings/Compilanc/COMcontact/Comcontact';
+import Comdocuments from './Pages/AccountSettings/Compilanc/COMdoc.jsx/Comdocuments';
+import Comregistration from './Pages/AccountSettings/Compilanc/COMreg/Comregistration';
+// import PaymentDetails from './Pages/PaymentDetails/PaymentDetails';
+
+// import PaymentCard from '../src//Assets/Images/card-payment.png';
+// import BankTransfer from '../src/Assets/Images/Transfer-1 1.png';
+// import Crypto from '../src/Assets/Images/crypto-1.png';
+// import USSDCODE from '../src/Assets/Images/ussd.png';
+import CardPaymentModal from './Components/Modal/CardPaymentModal/CardPaymentModal';
+
 
 function App() {
+//   const cardLists = [
+//     {
+//         image: PaymentCard,
+//         name: "Card Payment",
+        
+//     },
+//     {
+//         image: BankTransfer,
+//         name: "Bank Transfer",
+//     },
+//     {
+//         image: Crypto,
+//         name: "Cryptocurrency",
+//     },
+//     {
+//         image: USSDCODE,
+//         // tittle: '*USSD#',
+//         name: "USSD",
+//     },
+
+// ]
   const location=useLocation()
  console.log(location)
   return (
     <div className="App">
       {(location.pathname==="/dashboard" || location.pathname==="/transaction" || location.pathname==="/myAccount" || location.pathname==="/payment" || location.pathname==="/contactUs"|| location.pathname==="/developerCode"|| location.pathname==="/services"|| location.pathname==="/accountSettings")&&(<><Navbar /><Sidebar/></>)}
 
+        {/*setup for account settings in the side bar*/}     
+       {(location.pathname==="/profile" || location.pathname==="/api" || location.pathname==="/compilance" || location.pathname==="/payout" )&&(<><Navbar /><Sidebar/><AccountSettings /></>)}
+       
+        {/*setup for compilance in account settings in the side bar*/}     
+         {( location.pathname==="/comprofile" || location.pathname==="/comcontact" || location.pathname==="/comdocuments" || location.pathname==="/comregistration" )&&(<><Navbar /><Sidebar/><AccountSettings /><Compilance/></>)}
+
+      
+
 
 <Routes>
 <Route path="/" element={<Home />} />
+<Route path="/sidebar" element={<Sidebar />} />
 <Route path="/about" element={<AboutUs />} />
 <Route path="/support" element={<Support />} />
 <Route path="/signupLogin" element={<SignupOption />} />
@@ -51,12 +97,22 @@ function App() {
 <Route path="/busDetails5" element={<BusinessDetails5 />} />
 <Route path="/dashboard" element={<Dashboard />} />
 <Route path="/payment" element={<Payment />} />
+<Route path="/cardPaymentModal" element={<CardPaymentModal />} />
+{/* <Route path="/payment/:name" element={<PaymentDetails  cardLists={cardLists}/>} /> */}
 <Route path="/transaction" element={<Transaction />} />
 <Route path="/myAccount" element={<MyAccount />} />
 <Route path="/contactUs" element={<ContactUs />} />
 <Route path="/services" element={<Services />} />
 <Route path="/developerCode" element={<DeveloperCode />} />
 <Route path="/accountSettings" element={<AccountSettings/>} />
+<Route path="/payout" element={<Payout/>} />
+<Route path="/compilance" element={<Compilance/>} />
+<Route path="/profile" element={<Profile/>} />
+<Route path="/api" element={<API/>} />
+<Route path="/comprofile" element={<Comprofile/>} />
+<Route path="/comcontact" element={<Comcontact/>} />
+<Route path="/comdocuments" element={<Comdocuments/>} />
+<Route path="/comregistration" element={<Comregistration/>} />
 </Routes>
 
 
@@ -69,3 +125,4 @@ function App() {
   );
 }
 export default App;
+

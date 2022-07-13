@@ -83,7 +83,7 @@
     margin:25px 40px 15px 40px;
 }
 
-.Sbutton{
+.Sbutton, .Sbutton1 {
     width: 45%;
     height: 8%;
     border: solid 1px #292561;
