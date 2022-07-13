@@ -41,7 +41,10 @@ const Signup = () => {
     } else {
       setFormValid(false);
     }
-  }, [form]);
+}, [form.username,
+    form.email,
+    form.password,
+    form.confirmPassword])
 
   const handleChange = (e) => {
     setForm({
@@ -56,7 +59,10 @@ const Signup = () => {
 
     window.location = "/signupDetails";
     reset();
-  };
+  }
+
+
+let userDetails = JSON.parse(sessionStorage.getItem("userDetails"))
 
   const password = watch("password");
 
@@ -103,7 +109,8 @@ const Signup = () => {
                   trigger("username");
                 }}
               />
-              {errors.username && <small>{errors.username.message}</small>}
+              <h3> { userDetails.username } </h3>
+              {errors.username && (<small>{errors.username.message}</small>)}
             </div>
 
             <div className="auth__form-container_fields-content_input">

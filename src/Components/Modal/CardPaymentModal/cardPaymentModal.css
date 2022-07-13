@@ -1,0 +1,121 @@
+.modalContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5px;
+    /* background-color: black; */
+    
+}
+.modalContainer h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #292561;
+
+}
+.modalContainer .txt {
+    font-size: 25px;
+    line-height: 10px;
+    color: #292561;
+    padding-bottom: 20px;
+}
+.card-payment-container {
+    background-color: #292561;
+    width: 600px;
+    height: 250px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.card-payment-type {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+}
+.card-payment-type-1 {
+    width: 93%;
+    height: 60px;
+    background-color: white;
+    padding: 0 20px;
+    margin-left: 20px;
+    /* margin-bottom: 10px; */
+    border-radius: 10px;
+}
+
+
+.buttonProceed {
+    width: 200px;
+    background-color: rgb(241, 107, 18);
+    margin: 10px 200px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+}
+.add-card {
+    width: 150px;
+    margin: 20px 450px;
+    border: 1px solid #292561;
+    border-radius: 15px;
+}
+.add-card p {
+    text-align: center;
+    font-size: 16px;
+    color: #292561;
+}
+.change-method {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    
+    
+}
+.change-method img {
+    width: 5%;
+
+}
+.change-method span {
+    color: #292561;
+    font-size: 16px;
+}
+@media only screen and (max-width: 900px) {
+    .modalContainer {
+        width: 100%;
+    }
+    .card-payment-container {
+        width: 300px;
+        height: 225px;
+        
+    }
+    .card-payment-type-1 {
+        width: 85%;
+    }
+    .buttonProceed {
+        margin: 20px 15%;
+        
+    }
+    .add-card {
+        margin: 10px 75px;
+    }
+
+
+}
+/* .credit_cards-input {
+   
+    height: 70px;
+    width: 100%;
+
+}
+.credit_cards-input input {
+    padding: 20px 70px;
+    width: 100%;
+    height: 50%;
+    border: 2px solid lightblue;
+    
+}
+.credit_cards-input input::placeholder {
+    width: 100%;
+    background-color: blue;
+    text-align: left;
+
+} */

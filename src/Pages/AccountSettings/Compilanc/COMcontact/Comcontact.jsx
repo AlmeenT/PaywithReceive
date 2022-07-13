@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { CheckBox } from 'react-native-web';
 import './contactcom.css'
 const Comcontact = () => {
    // States for checking the errors
