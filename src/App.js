@@ -26,6 +26,7 @@ import AccountSettings from "./Pages/AccountSettings/AccountSettings"
 import Home from './Pages/Home/Home'
 import Support from './Pages/Support/Support';
 import AboutUs from './Pages/About us/AboutUs'
+import ForgotPassword2 from './Pages/Forgot Password2/ForgotPassword2';
 
 function App() {
   const location=useLocation()
@@ -44,6 +45,7 @@ function App() {
 <Route path="/signupDetails" element={<SignupDetails />} />
 <Route path="/login" element={<Login />} />
 <Route path="/forgotPassword" element={<ForgotPassword />} />
+<Route path="/forgotPassword2" element={<ForgotPassword2 />} />
 <Route path="/busDetails2" element={<BusinessDetails2 />} />
 <Route path="/busDetails4" element={<BusinessDetails4 />} />
 <Route path="/busDetails5" element={<BusinessDetails5 />} />
