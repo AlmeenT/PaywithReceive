@@ -25,6 +25,7 @@ import Services from "./Pages/Services/Services";
 import AccountSettings from "./Pages/AccountSettings/AccountSettings"
 import Home from './Pages/Home/Home'
 import Support from './Pages/Support/Support';
+import ForgotPassword2 from './Pages/Forgot Password2/ForgotPassword2';
 import AboutUs from './Pages/About us/AboutUs';
 import API from "./Pages/AccountSettings/API/API"
 import Compilance from "./Pages/AccountSettings/Compilanc/Compilance"
@@ -41,8 +42,6 @@ import Comregistration from './Pages/AccountSettings/Compilanc/COMreg/Comregistr
 // import Crypto from '../src/Assets/Images/crypto-1.png';
 // import USSDCODE from '../src/Assets/Images/ussd.png';
 import CardPaymentModal from './Components/Modal/CardPaymentModal/CardPaymentModal';
-
-
 
 
 function App() {
@@ -92,6 +91,7 @@ function App() {
 <Route path="/signupDetails" element={<SignupDetails />} />
 <Route path="/login" element={<Login />} />
 <Route path="/forgotPassword" element={<ForgotPassword />} />
+<Route path="/forgotPassword2" element={<ForgotPassword2 />} />
 <Route path="/busDetails2" element={<BusinessDetails2 />} />
 <Route path="/busDetails4" element={<BusinessDetails4 />} />
 <Route path="/busDetails5" element={<BusinessDetails5 />} />
