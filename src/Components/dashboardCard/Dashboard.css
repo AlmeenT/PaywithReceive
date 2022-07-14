@@ -1,5 +1,8 @@
 .dashboardBoxes{
     background: #292561;
-    box-shadow: 0px 4px 8px #292561;
     border-radius: 10px;
+}
+
+.dashboardBoxes:hover{
+box-shadow: 0px 4px 8px #292561;
 }

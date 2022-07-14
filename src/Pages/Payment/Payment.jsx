@@ -17,8 +17,8 @@ const Payment = ({cardLists}) => {
   let userDetails = JSON.parse(sessionStorage.getItem("userDetails"))
  
   return (
-    //please dont remove this lg:ml-[264px] lg:mt-[112px] just write your own code in it. thank you
-    <div className='lg:ml-[264px] lg:mt-[112px]'>
+    //please dont remove this lg:ml-[264px] mt-[100px] lg:mt-[112px] just write your own code in it. thank you
+    <div className='lg:ml-[264px] mt-[100px] lg:mt-[112px]'>
       {/* write here */}
     <div className='ml-[200px] px-6'>
       <h2> Payment</h2>
