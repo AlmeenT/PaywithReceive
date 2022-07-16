@@ -41,7 +41,7 @@ const SignupDetails = () => {
 
   const submitHandler = (e) => {
     e.preventDefault()
-    // sessionStorage.setItem('userDetails', JSON.stringify({...form}))  
+    sessionStorage.setItem('userDetails', JSON.stringify({...form}))  
 
     window.location="/dashboard";
     reset();

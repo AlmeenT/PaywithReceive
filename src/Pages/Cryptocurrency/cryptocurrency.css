@@ -1,0 +1,77 @@
+.crytocurrency-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 90px;
+}
+.crytocurrency-container {
+    background-color: #292561;
+    width: 600px;
+    height: 350px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.crytocurrency-container .text {
+    text-align: center;
+    line-height: 10px;
+    margin-top: 40px;
+    color: rgb(241, 163, 18);
+    
+}
+/* .bank-transfer-container .text  h2 {
+    font-size: 30px;
+}
+.bank-transfer-container .text p {
+    font-size: 18px;
+    margin-right: 10px;
+} */
+.textHead{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 35px;
+    
+}
+.crytocurrency-content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 30px;
+}
+.crytocurrency-content .most-used {
+    background-color: white;
+    width: 200px;
+    height: 70px;
+    border-radius: 7px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    margin: 10px 25px;
+}
+.crypto-pack {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.button-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.button-wrapper .back-btn {
+    padding-top: 20px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+}
+.button-wrapper .next-btn {
+    padding-top: 20px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+}

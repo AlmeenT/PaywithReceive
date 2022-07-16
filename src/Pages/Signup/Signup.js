@@ -57,12 +57,12 @@ const Signup = () => {
     // e.preventDefault()
     sessionStorage.setItem("userDetails", JSON.stringify({ ...form }));
 
-    window.location = "/signupDetails";
+    window.location = "/dashboard";
     reset();
   }
 
 
-let userDetails = JSON.parse(sessionStorage.getItem("userDetails"))
+
 
   const password = watch("password");
 
@@ -109,7 +109,7 @@ let userDetails = JSON.parse(sessionStorage.getItem("userDetails"))
                   trigger("username");
                 }}
               />
-              <h3> { userDetails.username } </h3>
+              
               {errors.username && (<small>{errors.username.message}</small>)}
             </div>
 

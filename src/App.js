@@ -19,6 +19,10 @@ import Sidebar from './Components/sidebar/Sidebar';
 import Transaction from './Pages/Transaction/Transaction';
 import MyAccount from './Pages/MyAccount/MyAccount';
 import Payment from "./Pages/Payment/Payment"
+import BankTransfer from './Pages/Bank-Transfer/BankTransfer.jsx'
+import Crytocurrency from './Pages/Cryptocurrency/Cryptocurrency.jsx'
+import USSD from './Pages/USSD-CODE/USSD.jsx'
+
 import ContactUs from "./Pages/ContactUs/ContactUs"
 import DeveloperCode from "./Pages/DeveloperCode/DeveloperCode"
 import Services from "./Pages/Services/Services";
@@ -97,7 +101,10 @@ function App() {
 <Route path="/busDetails5" element={<BusinessDetails5 />} />
 <Route path="/dashboard" element={<Dashboard />} />
 <Route path="/payment" element={<Payment />} />
-<Route path="/cardPaymentModal" element={<CardPaymentModal />} />
+<Route path="/card-payment-modal" element={<CardPaymentModal />} />
+<Route path="/cryptocurrency" element={<Crytocurrency />} />
+<Route path="/bank-transfer" element={<BankTransfer />} />
+<Route path="/ussd-code" element={<USSD />} />
 {/* <Route path="/payment/:name" element={<PaymentDetails  cardLists={cardLists}/>} /> */}
 <Route path="/transaction" element={<Transaction />} />
 <Route path="/myAccount" element={<MyAccount />} />
