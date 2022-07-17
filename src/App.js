@@ -141,6 +141,14 @@ function App() {
         <Route path="/comregistration" element={<Comregistration />} />
       </Routes>
 
+
+
+
+
+<div>
+    
+{(location.pathname==="/" || location.pathname==="/home" || location.pathname==="/signupLogin" || location.pathname==="/signup" || location.pathname==="/signupDetails"|| location.pathname==="/login"|| location.pathname==="/forgotPassword"|| location.pathname==="/busDetails2" || location.pathname==="/busDetails4" || location.pathname==="/busDetails5")&&(<><Footer/></>)}
+</div>
       <div>
         {(location.pathname === "/" ||
           location.pathname === "/home" ||

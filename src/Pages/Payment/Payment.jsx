@@ -20,8 +20,8 @@ const Payment = ({cardLists}) => {
     //please dont remove this lg:ml-[264px] mt-[100px] lg:mt-[112px] just write your own code in it. thank you
     <div className='lg:ml-[264px] mt-[100px] lg:mt-[112px]'>
       {/* write here */}
-    <div className='ml-[200px] px-6'>
-      <h2> Payment</h2>
+    <div className='ml-[10px] px-6'>
+      {/* <h2> Payment</h2> */}
 
       <div className='profleContainer'>
         <div className='profileImg'><FaRegUser style={{height:'50%', width:'50%', margin:'10px'}}/></div>
@@ -36,7 +36,7 @@ const Payment = ({cardLists}) => {
 
         <div className='cardList'>
           <div className='cardItem'>
-          <Link to='/cardPaymentModal' className='btn'>
+          <Link to='/card-payment-modal' className='btn'>
               <img src={ PaymentCard } alt='' />
               <span>Pay with card</span>
             </Link>
@@ -44,24 +44,24 @@ const Payment = ({cardLists}) => {
             
           </div>
           <div className='cardItem'>
-            <button className='btn'>
+            <Link to='/bank-transfer' className='btn'>
               <img src={ BankTransfer } alt='' />
               <span>Bank Transfer</span>
-            </button>
+            </Link>
            
           </div>
           <div className='cardItem'>
-            <button className='btn'>
+            <Link to='/cryptocurrency' className='btn'>
               <img src={ Crypto } alt='' />
               <span>Cryptocurrency</span>
-            </button>
+            </Link>
             
           </div>
           <div className='cardItem'>
-            <button className='btn'>
+            <Link to='/ussd-code' className='btn'>
               <img  src={ USSDCODE } alt='' />
               <span className='ussd'>ussd</span>
-            </button>
+            </Link>
             
           </div>
         </div>
