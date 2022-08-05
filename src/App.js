@@ -168,7 +168,6 @@ function App() {
           location.pathname === "/busDetails4" ||
           location.pathname === "/busDetails5") && (
           <>
-            <Footer />
           </>
         )}
       </div>
