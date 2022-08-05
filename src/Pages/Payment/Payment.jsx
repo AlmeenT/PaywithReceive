@@ -36,7 +36,7 @@ const Payment = ({cardLists}) => {
 
         <div className='cardList'>
           <div className='cardItem'>
-          <Link to='/card-payment-modal' className='btn'>
+          <Link to='/payment/cardPayment' className='btn'>
               <img src={ PaymentCard } alt='' />
               <span>Pay with card</span>
             </Link>
@@ -44,21 +44,21 @@ const Payment = ({cardLists}) => {
             
           </div>
           <div className='cardItem'>
-            <Link to='/bank-transfer' className='btn'>
+            <Link to='/payment/bank' className='btn'>
               <img src={ BankTransfer } alt='' />
               <span>Bank Transfer</span>
             </Link>
            
           </div>
           <div className='cardItem'>
-            <Link to='/cryptocurrency' className='btn'>
+            <Link to='/payment/crypto' className='btn'>
               <img src={ Crypto } alt='' />
               <span>Cryptocurrency</span>
             </Link>
             
           </div>
           <div className='cardItem'>
-            <Link to='/ussd-code' className='btn'>
+            <Link to='/payment/ussd' className='btn'>
               <img  src={ USSDCODE } alt='' />
               <span className='ussd'>ussd</span>
             </Link>

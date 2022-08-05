@@ -33,7 +33,11 @@ import Comprofile from "./Pages/AccountSettings/Compilanc/COMProfile/ComProfile"
 import Comcontact from "./Pages/AccountSettings/Compilanc/COMcontact/Comcontact";
 import Comdocuments from "./Pages/AccountSettings/Compilanc/COMdoc.jsx/Comdocuments";
 import Comregistration from "./Pages/AccountSettings/Compilanc/COMreg/Comregistration";
-// import PaymentDetails from './Pages/PaymentDetails/PaymentDetails';
+import USSDCODE from './Pages/USSD-CODE/USSD'
+import Cryptocurrency from './Pages/Cryptocurrency/Cryptocurrency'
+import BankTransfer from './Pages/Bank-Transfer/BankTransfer'
+//import PaymentDetails from './Pages/PaymentDetails/PaymentDetails';
+
 
 // import PaymentCard from '../src//Assets/Images/card-payment.png';
 // import BankTransfer from '../src/Assets/Images/Transfer-1 1.png';
@@ -123,8 +127,11 @@ function App() {
         <Route path="/busDetails5" element={<BusinessDetails5 />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/payment" element={<Payment />} />
-        <Route path="/cardPaymentModal" element={<CardPaymentModal />} />
-        {/* <Route path="/payment/:name" element={<PaymentDetails  cardLists={cardLists}/>} /> */}
+        <Route path="/payment/cardPayment" element={<CardPaymentModal />} />
+        <Route path="/payment/bank" element={<BankTransfer />} />
+        <Route path="/payment/crypto" element={<Cryptocurrency />} />
+        <Route path="/payment/ussd" element={<USSDCODE />} />
+        {/* <Route path="/payment/:name" element={<PaymentDetails  cardLists={cardLists}/>} />  */}
         <Route path="/transaction" element={<Transaction />} />
         <Route path="/myAccount" element={<MyAccount />} />
         <Route path="/contactUs" element={<ContactUs />} />

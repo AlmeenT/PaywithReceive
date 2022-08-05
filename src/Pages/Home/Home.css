@@ -29,20 +29,19 @@ body{
            }
            .Part2
            {
-              margin-left: 16%;
-             margin-top: 6rem;
-              text-align: center;
-            font-family: 'DM Sans';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 65px;
-                line-height: 85px;
-           
-                color: #FFFFFF;
+               margin-left: 10%;
+               margin-top: 6rem;
+               font-family: 'DM Sans';
+               font-style: normal;
+               color: #FFFFFF;
            }
            .texth1{
-            text-align:start;
+            text-align: start;
             color: #FFFFFF;
+            font-size: 65px;
+            font-weight: 700;
+            line-height: 85px;
+            width:700px;
            }
            .Part3{
             margin-left: 7rem;
