@@ -1,7 +1,7 @@
 .settings{
     display: flex;
         flex-direction: row;
-margin-left: 300px;
+margin-left: 50px;
 margin-top: -3rem;
 gap:1.5rem;
 
@@ -27,7 +27,7 @@ font-family: 'DM Sans';
     background: #292561;
         border-radius: 10px;
     margin-top: 0.5rem;
-margin-left: 300px;
+margin-left: 50px;
 padding: 0.5rem 2rem;
       
         width: max-content;

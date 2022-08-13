@@ -24,13 +24,15 @@
     margin-top: -0.5rem;
 }
 .Rainn .patn {
-    width: max-content;
+width: max-content;
     background: #292561;
     margin-left: 795px;
     margin-top: 2rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bold;
+    padding: 1rem;
+    border-radius: 20px;
     font-size: 14px;
     color: #D4D3DF;
 }

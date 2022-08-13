@@ -90,6 +90,8 @@ margin-top: 2rem;
 font-family: 'Poppins';
     font-style: normal;
     font-weight: bold;
+    padding: 1rem;
+    border-radius: 20px;
     font-size: 14px;
     color: #D4D3DF;
 }
