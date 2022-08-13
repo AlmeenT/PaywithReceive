@@ -5,8 +5,8 @@ import './MainNav.css'
 
 const MainNav = () => {
   return (
-    <div className='flex lg:pb-0.5 bg-white'>
-        <Link to='/'><div className='flex ml-3 mt-4 lg:ml-24 lg:mt-5' >
+    <div className='flex lg:pb-1 bg-white'>
+        <Link to='/'><div className='flex ml-2 mt-5 lg:ml-24 lg:mt-5' >
             <img alt='' src={Logo} className='w-5 h-5 lg:w-10 lg:h-10' />
             <h2 className='-mt-6 text-xs lg:text-2xl lg:-mt-5  text-orange-400'>re</h2><h2 className='-mt-6 text-xs lg:text-2xl lg:-mt-5 text-blue-800'>ceive</h2>
         </div></Link>
