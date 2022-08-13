@@ -119,7 +119,7 @@ export default function Profile() {
       </form>
      
     </div>
-     <button onClick={handleSubmit} className="patn" type="submit">
+     <button onClick={handleSubmit} id="patn" type="submit">
           Save changes
         </button>
     </div>
