@@ -54,21 +54,32 @@ padding: 0.5rem 2rem;
     color:#FFFFFF;
 }
  @media screen and (max-width: 600px){
+    .account-start .settings {
+            margin-left: -10px;
+            margin-top: -3rem;
+    
+        }
+
 .account-start .settings .topic {
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: bold;
-        margin-top: 10rem;
-        font-size: 36px;
-        line-height: 10px;
-        color: #292561;
+        margin-top: 5rem;
+        font-size: 26px;
+        line-height: 50px;
+       
     }
+        .account-start .reku {
+            margin-top: 0.5rem;
+            margin-left: 0px;
+            padding: 0.5rem 0rem;
+    
+            width: max-content;
+            font-size: 40px;
+        }
   .account-start .peku {
       display: flex;
       flex-direction: column;
 
+  }
+  .account-start .peku a {
+      padding: 0 5rem;
   }
  }
