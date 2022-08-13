@@ -42,3 +42,40 @@ width: max-content;
     border: 3px solid;
     border-color: #292561;
 }
+@media screen and (max-width: 1024px) {
+    .Rainn .mporm {
+            margin-left: 30rem;
+        }
+
+          .Rainn .patn {
+                    
+                    margin-left: 40rem;
+                 
+                }
+}
+ @media screen and (max-width: 600px) {
+    .Rainn .mporm {
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            background: #292561;
+            margin-top: 0rem;
+            width: max-content;
+            padding-left: 1rem;
+            padding-top: 3rem;
+            padding-right: 2rem;
+        }
+                .Rainn .patn {
+                    width: max-content;
+                    background: #292561;
+                    margin-left: 100px;
+                    margin-top: 0.5rem;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: bold;
+                    padding: 1rem;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    color: #D4D3DF;
+                }
+ }

@@ -60,4 +60,47 @@ width: max-content;
 option{
 color: black;
 }
+@media screen and (max-width: 1024px) {
+    .Painn .mporm {
+        margin-left: 30rem;
+        
+    }
+
+        .Painn .patn {
+            margin-left:40rem;
+        }
+}
+ @media screen and (max-width: 600px) {
+    .Painn .mporm {
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            background: #292561;
+            border-radius: 20px;
+            margin-top: 0rem;
+            width: max-content;
+            padding-left: 1rem;
+            padding-top: 3rem;
+            padding-right: 2rem;
+        }
+   .mporm .sinput {
+       
+       width: 27.5ch;
+     
+   }
+   .Painn .patn {
+       width: max-content;
+       background: #292561;
+       margin-left: 100px;
+       margin-top: 1rem;
+       font-family: 'Poppins';
+       font-style: normal;
+       font-weight: bold;
+       padding: 1rem;
+       border-radius: 20px;
+       font-size: 14px;
+       color: #D4D3DF;
+   }
+
+ }
 

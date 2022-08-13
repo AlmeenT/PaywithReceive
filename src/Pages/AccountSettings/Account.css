@@ -53,21 +53,63 @@ padding: 0.5rem 2rem;
 .account-start .link-active{
     color:#FFFFFF;
 }
+
+ /* for ipad */
+ @media screen and
+ (max-width: 1024px) {
+     .account-start .settings img {
+         margin-top: 8rem;
+
+         margin-left: 2rem;
+     }
+
+     .account-start .settings .topic {
+         margin-left: -1rem;
+         display: flex;
+         align-items: flex-end;
+         text-align: center;
+         font-family: 'DM Sans';
+         font-style: normal;
+         font-weight: bold;
+         margin-top: 7rem;
+         color: #292561;
+     }
+
+ }
+/* for iphone */
  @media screen and (max-width: 600px){
     .account-start .settings {
+            display: flex;
+            flex-direction: row;
             margin-left: -10px;
             margin-top: -3rem;
+            gap: 1.5rem;
     
         }
-
+.account-start .settings img {
+    margin-top: 5.5rem;
+    height: 28px;
+    margin-left: 2rem;
+}
 .account-start .settings .topic {
+       margin-left: -1rem;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: bold;
         margin-top: 5rem;
-        font-size: 26px;
+        font-size: 23px;
         line-height: 50px;
-       
+        color: #292561;
     }
         .account-start .reku {
-            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: row;
+            background: #292561;
+            border-radius: 10px;
+            margin-top: -0.5rem;
             margin-left: 0px;
             padding: 0.5rem 0rem;
     
@@ -80,6 +122,13 @@ padding: 0.5rem 2rem;
 
   }
   .account-start .peku a {
+      font-size: 25px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      align-items: flex-end;
+      text-align: center;
       padding: 0 5rem;
   }
  }
+

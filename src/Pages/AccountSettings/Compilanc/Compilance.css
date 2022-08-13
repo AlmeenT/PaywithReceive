@@ -22,3 +22,29 @@ font-family: 'DM Sans';
    
     color: #292561;
 }
+ @media screen and (max-width: 1024px) {
+    .meju-compilance {
+           
+            margin-left: 12rem;
+            
+        }
+ }
+ @media screen and (max-width: 600px) {
+    .meju-compilance {
+            display: flex;
+            font-size: 10px;
+            margin-left: 0px;
+            margin-top: 1rem;
+        }
+    .nav-mopilance {
+            display: flex;
+            flex-direction: row;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight:2000px;
+            font-size: 16px;
+            line-height: 36px;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+ }

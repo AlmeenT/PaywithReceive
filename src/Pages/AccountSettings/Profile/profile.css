@@ -104,3 +104,75 @@ font-family: 'Poppins';
 .save{
     color:red;
 }
+@media screen and (max-width: 1024px) {
+    .porm {
+        margin-left: 400px;
+        display: flex;
+        flex-direction: column;
+        background: #292561;
+        border-radius: 20px;
+        margin-top: 0.5rem;
+        width: max-content;
+        padding-left: 1rem;
+        padding-top: 3rem;
+        padding-right: 0.8rem;
+    }
+
+    .Mainn .patn {
+        margin-left: 33rem;
+        margin-top: 2rem;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .porm {
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            background: #292561;
+            border-radius: 20px;
+            margin-top: 0.5rem;
+            width: max-content;
+            padding-left: 1rem;
+            padding-top: 3rem;
+            padding-right: 0.8rem;
+        }
+                .porm h1 {
+                    text-align: center;
+                    margin-left: 36%;
+                    color: #FAAF40;
+                    margin-top: -3rem;
+                    margin-bottom: -0.5rem;
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 30px;
+                    line-height: 66px;
+                    width: 20%;
+                }
+                .input {
+                    width: 35ch;
+                    
+                }
+
+          .aput {
+              
+              width: 15ch;
+             
+          }
+
+                  .iput {
+                      width: 18ch;
+                  }
+
+                  .porm input[type=email]{
+    width:35ch;
+ 
+}
+.Mainn .patn {
+    margin-left: 8rem;
+    margin-top: 0rem;
+}
+}
+
+ 

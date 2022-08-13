@@ -10,3 +10,10 @@
 .save {
     color: red;
 }
+
+ @media screen and (max-width: 600px) {
+    .porm .sinput{
+            width: 27.5ch;
+          
+        }
+ }
