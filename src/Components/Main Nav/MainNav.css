@@ -6,6 +6,7 @@
     font-size:7px;
 }
 
+
 @media screen and (min-width: 900px){
     .links h2 {
     font-size:13px;
@@ -14,5 +15,10 @@
     .buttons {
     font-size:14px;
 }
+
+    .buttons:hover{
+        font-size: 16px;
+        font-weight:bold;
+    }
     
 }

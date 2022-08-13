@@ -30,14 +30,14 @@ const Touch = props => {
                 <img alt='' src={mail} className='w-16 h-16 mt-4 ml-4'/>
                 <div className='text-left'>
                   <h2 className='text-2xl font-bold'>Send an email</h2>
-                  <h2 className='ml-10 text-black'>Get a response within hours</h2>
+                  <h2 className='ml-10 -mt-9 text-black'>Get a response within hours</h2>
                 </div>
               </div>
               <div className='flex ml-12 w-96 h-24 border-solid border-2 border-black'>
                 <img alt='' src={Chat} className='w-16 h-16 mt-4 ml-4'/>
                 <div className='text-left'>
                   <h2 className='text-2xl font-bold'>Chat with us</h2>
-                  <h2 className='ml-14 text-black'>Get response within minutes</h2>
+                  <h2 className='ml-14 -mt-9 text-black'>Get response within minutes</h2>
                 </div>
               </div>
               <div className='flex ml-12 w-96 h-24 border-solid border-2 border-black'>
