@@ -78,14 +78,14 @@ body{
                   .reasons {
                       display: grid;
                       grid-template-columns: repeat(3, 1fr);
-                      gap: 4.5rem;
+                     gap: 3rem; 
                      
                   }
                     
                   .offers {
                     margin-top: 2rem;
-                    margin-right: 20rem;
-                    margin-left: -15rem;
+                    margin-right: 1rem;
+                    margin-left: 5rem;
                             background: #CAE2E3;
                             box-shadow: 17px 4px 4px rgba(0, 0, 0, 0.25);
                             border-radius: 20px;
@@ -124,7 +124,10 @@ body{
             }
           .icons5 img{
             margin-left:1.5rem;
-            margin-top: -0.5rem;
+            margin-top: -2rem;
+          }
+          .icons6 img{
+            margin-top: -2rem;
           }
           .offers h3{
             color: #312B2B;
@@ -144,11 +147,13 @@ body{
             text-align: center;
             color: #504848;
             line-height: 3rem;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
          }
          .second-section{
            background: white;
            padding-bottom: 3rem;
+           padding-left: 5rem;
+        
          }
 
          /*third section*/
