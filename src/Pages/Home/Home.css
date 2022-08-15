@@ -12,7 +12,7 @@ body{
             gap:1%;
        }
       
-           .Part1 {
+          .general .Part1 {
                padding: 1.2rem;   
                text-align: center;
                margin-left: 13%; 
@@ -24,10 +24,10 @@ body{
             
                 color: #ECE6E6;
            }
-           .Part1 p{
+           .general .Part1 p{
             text-align: start;
            }
-           .Part2
+           .general .Part2
            {
                margin-left: 10%;
                margin-top: 6rem;
@@ -35,7 +35,7 @@ body{
                font-style: normal;
                color: #FFFFFF;
            }
-           .texth1{
+           .general .texth1{
             text-align: start;
             color: #FFFFFF;
             font-size: 65px;
@@ -43,13 +43,13 @@ body{
             line-height: 85px;
             width:700px;
            }
-           .Part3{
+           .general .Part3{
             margin-left: 7rem;
             margin-top: 3rem;
             margin-bottom: 9rem;
             width: max-content;
            }
-           .anchor{
+           .general .anchor{
             background: #FAAF40;
             font-family: 'Poppins';
                 font-style: normal;
@@ -62,7 +62,7 @@ body{
                 border: 1px solid;
                 transition: all 400ms ease;
            }
-           .anchor:hover{
+           .general .anchor:hover{
             font-size: 20px;
              background: transparent;
              color: #FAAF40;
@@ -70,22 +70,22 @@ body{
              border-color: #FAAF40;
              
            }
-          .cash{
+          .general .cash{
             margin-top: 5rem;
           }
 
           /*second section*/
-                  .reasons {
+                                 .second-section  .reasons {
                       display: grid;
                       grid-template-columns: repeat(3, 1fr);
-                      gap: 4.5rem;
+                     gap: 3rem; 
                      
                   }
                     
-                  .offers {
+                                   .second-section .offers {
                     margin-top: 2rem;
-                    margin-right: 20rem;
-                    margin-left: -15rem;
+                    margin-right: 1rem;
+                    margin-left: 5rem;
                             background: #CAE2E3;
                             box-shadow: 17px 4px 4px rgba(0, 0, 0, 0.25);
                             border-radius: 20px;
@@ -97,36 +97,39 @@ body{
                                 height: 209px;
                           transition: all 400ms ease;
                         }
-         .offers:hover {
+                 .second-section .offers:hover {
             border: 3px solid;
              border-color: #156b6e;
              background: transparent;
             cursor: pointer;
          }
-            .icons{
+                        .second-section .icons{
               margin-bottom: 1rem;
               margin-left: 2.5rem;
             }
-            .icons2 img{
+                        .second-section .icons2 img{
                 margin-top: -2rem;
                 margin-left: 1rem;
             }
                        
-            .icons3 img {
+                        .second-section .icons3 img {
                            
                 margin-top: -0.5rem;           
                 margin-left: 1.5rem;
                 padding-bottom: 0.5rem;
                         }
-            .icons4 img{
+                        .second-section .icons4 img{
                 margin-left: 3rem;
                 padding-bottom:1rem;
             }
-          .icons5 img{
+                  .second-section .icons5 img{
             margin-left:1.5rem;
-            margin-top: -0.5rem;
+            margin-top: -2rem;
           }
-          .offers h3{
+                  .second-section .icons6 img{
+            margin-top: -2rem;
+          }
+                 .second-section  .offers h3{
             color: #312B2B;
             font-family: 'DM Sans';
                 font-style: normal;
@@ -144,11 +147,13 @@ body{
             text-align: center;
             color: #504848;
             line-height: 3rem;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
          }
          .second-section{
            background: white;
            padding-bottom: 3rem;
+           padding-left: 5rem;
+        
          }
 
          /*third section*/
@@ -169,17 +174,17 @@ body{
             
                 color: #504848;
          }
-         .speech-1{
+                 .third-section .speech-1{
             display: grid;
             grid-template-columns: 50% 50%;
          }
-         .speech{
+                 .third-section .speech{
             text-align: justify;
             margin-top: 8rem;
             margin-right: 14rem;
       
          }
-         .speech h3{
+                  .third-section .speech h3{
             font-family: 'DM Sans';
                 font-style: normal;
                 font-weight: bold;
@@ -188,7 +193,7 @@ body{
                 padding-bottom: 0.5rem;    
             color: #504848;
          }
-         .speech p{
+                 .third-section .speech p{
             font-family: 'DM Sans';
                 font-style: normal;
                 font-weight: 500;
@@ -198,18 +203,18 @@ body{
                 color: #504848;
                 word-spacing: 0.1rem;
          }
-         .speech-11{
+                 .third-section .speech-11{
          
         margin-top: 4rem;
                 margin-left: 11rem;
          }
-                 .speech2 {
+                                 .third-section .speech2 {
                      text-align: justify;
                      margin-top: 6.5rem;
                      margin-left: 14rem;
         
                  }
-                                 .speech2 h3 {
+                                .third-section .speech2 h3 {
                                      font-family: 'DM Sans';
                                      font-style: normal;
                                      font-weight: bold;
@@ -219,7 +224,7 @@ body{
                                      color: #504848;
                                  }
                 
-                                 .speech2 p {
+                                .third-section .speech2 p {
                                      font-family: 'DM Sans';
                                      font-style: normal;
                                      font-weight: 500;
@@ -231,11 +236,11 @@ body{
                                  }
 
 
-        .speech-23{
+           .third-section .speech-23{
               margin-top:3.5rem;
         }
         /*last section*/
-        .last-section{
+             .last-section{
             background: white;
         }
         .iconss{
@@ -302,26 +307,26 @@ body{
                                            gap: 1%;
                                        }
                 
-                                       .Part1 {
+                                      .general  .Part1 {
                                            padding: 1.2rem;
                                            text-align: center;
                                            margin-left: 0rem;
                                            font-family: 'DM Sans';
                                            font-style: italic;
                                            font-weight: 500;
-                                           font-size: 30px;
+                                           font-size: 27px;
                 
-                
+                                             margin-top: -1rem;
                                            color: #ECE6E6;
                 
                                        }
                 
-                                       .Part2 {
+                                        .general .Part2 {
                                            text-align: center;
                                            font-family: 'DM Sans';
                                            font-style: normal;
                                            font-weight: 700;
-                                           font-size:50px;
+                                           font-size:20px;
                                            line-height: 50px;
                                            margin-left: 1rem;
                                            margin-top: 1rem;
@@ -329,13 +334,13 @@ body{
                                        }
                 
                 
-                                       .Part3 {
+                                       .general .Part3 {
                                            margin-left: 1rem;
                                            margin-top: 3rem;
                                            width: max-content;
                                        }
                 
-                                       .anchor {
+                                       .general .anchor {
                                            background: #FAAF40;
                                            font-family: 'Poppins';
                                            font-style: normal;
@@ -349,7 +354,7 @@ body{
                 
                                        }
                 
-                                       .anchor:hover {
+                                       .general .anchor:hover {
                                            font-size: 29px;
                                            background: transparent;
                                            color: #FAAF40;
@@ -357,22 +362,30 @@ body{
                                            border-color: #FAAF40;
                 
                                        }
-                
-                                       .cash {
+                                       .general .texth1{
+            text-align: start;
+            color: #FFFFFF;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 55px;
+            width:700px;
+           }
+                                      .general  .cash {
                                            margin-top: -17rem;
                                            margin-left: 30rem;
                                        }
                 
-                                       .cash .cashimg {
+                                       .general .cash .cashimg {
                                            width: 90%;
                                        }
                 
                                        /*second*/
                 
                                        .second-section{
-                                        margin-bottom: 9rem;
+                                        margin-bottom: 14rem;
+                                        margin-left: 7rem;
                                        }
-                                       .reasons {
+                                       .second-section .reasons {
                 
                                            display: grid;
                                            grid-template-columns: repeat(2, 2fr);
@@ -384,20 +397,21 @@ body{
                                            font-size:xx-large;
                                            font-weight: bolder;
                                            text-align: center;
-                                           margin-left: -8rem;
+                                           margin-left: -25rem;
                                            margin-right: -8rem;
                                            line-height: 2rem;
-                                           margin-bottom: -2rem;
+                                           margin-bottom: 1rem;
+                                           margin-top: -3rem;
                                        }
                 
-                                       .offers {
+                                        .second-section .offers {
                                            width: 200px;
                                            height: 209px;
                                            margin-left: -6rem;
                                            margin-right: 10rem;
                                        }
                 
-                                       .icons img {
+                                       .second-section .icons img {
                 
                                            margin-bottom: 1rem;
                                            margin-left: -1rem;
@@ -406,7 +420,7 @@ body{
                                        }
                 
                 
-                                       .icons2 img {
+                                       .second-section .icons2 img {
                                            margin-top: -2rem;
                                            margin-left: 0.5rem;
                                            padding-bottom: 1.5rem;
@@ -415,28 +429,28 @@ body{
                                        }
                 
                 
-                                       .icons3 img {
+                                       .second-section .icons3 img {
                 
                                            margin-top: -0.5rem;
                                            margin-left: -0rem;
                                            padding-bottom: 0.5rem;
                                        }
                 
-                                       .icons4 img {
+                                       .second-section .icons4 img {
                                            margin-left: 1rem;
                                            padding-bottom: 1rem;
                                        }
                 
-                                       .icons5 img {
+                                       .second-section .icons5 img {
                                            margin-left: 0rem;
                                            margin-top: -0.5rem;
                                        }
                 
-                                       .icons6 img {
+                                       .second-section .icons6 img {
                                            padding-bottom: 1rem;
                                        }
                 
-                                       .offers h3 {
+                                       .second-section .offers h3 {
                                            color: #312B2B;
                                            font-family: 'DM Sans';
                                            font-style: normal;
@@ -458,7 +472,7 @@ body{
                                            margin-bottom: 2rem;
                                        }
                 
-                                       .speech {
+                                      .third-section .speech {
                                            text-align: start;
                                            margin-top: 1rem;
                 
@@ -466,7 +480,7 @@ body{
                 
                                        }
                 
-                                       .speech h3 {
+                                       .third-section .speech h3 {
                                            margin-left: -1rem;
                                            font-weight: bold;
                                            font-size: 33px;
@@ -475,16 +489,16 @@ body{
                                            color: #504848;
                                        }
                 
-                                       .speech-11 {
+                                      .third-section .speech-11 {
                                            margin-left: -0.5rem;
                                            margin-top: -1rem;
                                        }
                 
-                                       .speech-11 img {
+                                      .third-section .speech-11 img {
                                            height: 100%;
                                        }
                 
-                                       .speech p {
+                                       .third-section .speech p {
                                            font-weight: 500;
                                            font-size: 34px;
                                            line-height: 31px;
@@ -493,12 +507,12 @@ body{
                                            word-spacing: 0.1rem;
                                        }
                 
-                                       .speech2 {
+                                       .third-section .speech2 {
                                            margin-top: 1rem;
                                            margin-bottom: 1.5rem;
                                        }
                 
-                                       .speech2 h3 {
+                                       .third-section .speech2 h3 {
                                            margin-left: -13rem;
                                            font-weight: bold;
                                            font-size: 33px;
@@ -507,7 +521,7 @@ body{
                                            color: #504848;
                                        }
                 
-                                       .speech2 p {
+                                       .third-section .speech2 p {
                                            margin-left: -13rem;
                                            font-weight: 500;
                                            font-size: 34px;
@@ -517,11 +531,11 @@ body{
                                            word-spacing: 0.1rem;
                                        }
                 
-                                       .speech-23 {
+                                       .third-section .speech-23 {
                                            width: 125%;
                                        }
                 
-                                       .speech-23 img {
+                                       .third-section .speech-23 img {
                                            height: 180%;
                                            width: 200%;
                                            margin-left: -3rem;
@@ -577,6 +591,9 @@ body{
                                        }
                 
                                    }
+
+
+
                                  /* for mobile phones */
                                    @media screen and (max-width: 600px) {
                                        .first-section {
@@ -593,7 +610,7 @@ body{
                                            gap: 1%;
                                        }
                 
-                                       .Part1 {
+                                        .general .text1 .Part1 {
                                            padding: 1.2rem;
                                            text-align: center;
                                            margin-left: 0rem;
@@ -601,13 +618,13 @@ body{
                                            font-style: italic;
                                            font-weight: 700;
                                            font-size: 15px;
-                
+                                            margin-top: -1rem;
                 
                                            color: #ECE6E6;
                 
                                        }
-                
-                                       .Part2 {
+                                     
+                                       .general .text1 .Part2 {
                                            text-align: center;
                                            font-family: 'DM Sans';
                                            font-style: normal;
@@ -615,18 +632,25 @@ body{
                                            font-size: 30px;
                                            line-height: 50px;
                                            margin-left: 1rem;
-                                           margin-top: 1rem;
+                                           margin-top: 0.5rem;
                                            color: #FFFFFF;
                                        }
+                                       
+                                         .general .text1 .texth1{
+                                            display: flex;
+                                            text-align: center;
+                                        font-size: 18px;
+                                        margin-left: -1rem;
+                                        justify-self: start;
+                                       }
                 
-                
-                                       .Part3 {
+                                       .general .text1  .Part3 {
                                            margin-left: 1rem;
                                            margin-top: 1rem;
                                            width: max-content;
                                        }
                 
-                                       .anchor {
+                                        .general .anchor {
                                            background: #FAAF40;
                                            font-family: 'Poppins';
                                            font-style: normal;
@@ -640,7 +664,7 @@ body{
                 
                                        }
                 
-                                       .anchor:hover {
+                                        .general .anchor:hover {
                                            font-size: 13px;
                                            background: transparent;
                                            color: #FAAF40;
@@ -649,39 +673,41 @@ body{
                 
                                        }
                 
-                                       .cash {
+                                        .general .cash {
                                            margin-top: -13rem;
                                            margin-left: 10rem;
                                        }
                 
-                                       .cash .cashimg {
+                                        .general .cash .cashimg {
                                            width: 100%;
                                        }
                 
                                        /*second*/
                                       .second-section{
                                         margin-top: 1rem;
+                                        margin-left:-4rem;
                                       }
                 
-                                       .reasons {
+                                      .second-section .reasons {
                 
                                            display: grid;
                                            grid-template-columns: repeat(2, 2fr);
-                                           gap: 0rem;
+                                           gap: 1rem;
                 
                                        }
                 
                                        .second-section h2 {
                                            font-size:x-large;
                                            text-align: center;
-                                           margin-left: -0.5rem;
-                                           margin-right: 3rem;
+                                           margin-left: 1rem;
+                                           margin-right: -1rem;
                                            line-height: 2rem;
                                            margin-bottom: -2rem;
+                                            margin-top: 2rem;
                                           
                                        }
                 
-                                       .offers {
+                                       .second-section .offers {
                                            width: 150px;
                                            height: 190px;
                                            margin-left: -0.5rem;
@@ -691,7 +717,7 @@ body{
                                            padding-top: 1rem;
                                        }
                 
-                                       .icons img {
+                                       .second-section .icons img {
                 
                                            margin-bottom: 1rem;
                                            margin-left: -1rem;
@@ -700,7 +726,7 @@ body{
                                        }
                 
                 
-                                       .icons2 img {
+                                       .second-section .icons2 img {
                                            margin-top: -2rem;
                                            margin-left: 0.5rem;
                                            padding-bottom: 1.5rem;
@@ -709,33 +735,34 @@ body{
                                        }
                 
                 
-                                       .icons3 img {
+                                       .second-section .icons3 img {
                 
                                            margin-top: -0.5rem;
                                            margin-left: -0rem;
                                            padding-bottom: 0.5rem;
                                        }
                 
-                                       .icons4 img {
+                                       .second-section .icons4 img {
                                            margin-left: 1rem;
                                            padding-bottom: 1rem;
                                        }
                 
-                                       .icons5 img {
+                                       .second-section .icons5 img {
                                            margin-left: 0rem;
                                            margin-top: -0.5rem;
                                        }
                 
-                                       .icons6 img {
+                                       .second-section .icons6 img {
+                                        margin-top: 0.5rem;
                                            padding-bottom: 1rem;
                                        }
                 
-                                       .offers h3 {
+                                       .second-section .offers h3 {
                                            color: #312B2B;
                                            font-family: 'DM Sans';
                                            font-style: normal;
                                            font-weight: bolder;
-                                           font-size: 19px;
+                                           font-size: 15px;
                                            line-height: 20px;
                                            text-align: center;
                                            margin-left: -0.5rem;
@@ -752,7 +779,7 @@ body{
                                            margin-bottom: 2rem;
                                        }
                 
-                                       .speech {
+                                        .third-section .speech {
                                            text-align: start;
                                            margin-top: 1rem;
                 
@@ -760,7 +787,7 @@ body{
                 
                                        }
                 
-                                       .speech h3 {
+                                         .third-section .speech h3 {
                                            margin-left: -1rem;
                                            font-weight: bold;
                                            font-size: 23px;
@@ -769,16 +796,16 @@ body{
                                            color: #504848;
                                        }
                 
-                                       .speech-11 {
+                                         .third-section .speech-11 {
                                            margin-left: -0.5rem;
                                            margin-top: -1rem;
                                        }
                 
-                                       .speech-11 img {
+                                         .third-section .speech-11 img {
                                            height: 100%;
                                        }
                 
-                                       .speech p {
+                                        .third-section .speech p {
                                            font-weight: 500;
                                            font-size: 17px;
                                            line-height: 21px;
@@ -787,12 +814,12 @@ body{
                                            word-spacing: 0.1rem;
                                        }
                 
-                                       .speech2 {
+                                        .third-section .speech2 {
                                            margin-top: 1rem;
                                            margin-bottom: 1.5rem;
                                        }
                 
-                                       .speech2 h3 {
+                                           .third-section .speech2 h3 {
                                            margin-left: -13rem;
                                            font-weight: bold;
                                            font-size: 23px;
@@ -801,7 +828,7 @@ body{
                                            color: #504848;
                                        }
                 
-                                       .speech2 p {
+                                       .third-section .speech2 p {
                                            margin-left: -14rem;
                                            font-weight: 500;
                                            font-size: 17px;
@@ -810,21 +837,21 @@ body{
                                            color: #504848;
                                            word-spacing: 0.1rem;
                                        }
-                                       .speech-22{
+                                       .third-section .speech-22{
                                         margin-top: 2rem;
                                         margin-left: 1rem;
                                         margin-right: -2rem;
                                        
                                        }
-                                       .speech-22 img{
+                                       .third-section .speech-22 img{
                                         height:90%;
                                        }
                 
-                                       .speech-23 {
+                                       .third-section .speech-23 {
                                            width: 125%;
                                        }
                 
-                                       .speech-23 img {
+                                       .third-section .speech-23 img {
                                            height: 180%;
                                            width: 200%;
                                            margin-left: -3rem;

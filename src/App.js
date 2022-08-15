@@ -92,8 +92,8 @@ function App() {
         location.pathname === "/compilance" ||
         location.pathname === "/payout") && (
         <>
-          <Navbar />
-          <Sidebar />
+          <Navbar showSideNav={showSideNav} setShowSideNav={setShowSideNav} />
+          <Sidebar showSideNav={showSideNav} setShowSideNav={setShowSideNav} />
           <AccountSettings />
         </>
       )}
@@ -104,8 +104,8 @@ function App() {
         location.pathname === "/comdocuments" ||
         location.pathname === "/comregistration") && (
         <>
-          <Navbar />
-          <Sidebar />
+         <Navbar showSideNav={showSideNav} setShowSideNav={setShowSideNav} />
+          <Sidebar showSideNav={showSideNav} setShowSideNav={setShowSideNav} />
           <AccountSettings />
           <Compilance />
         </>

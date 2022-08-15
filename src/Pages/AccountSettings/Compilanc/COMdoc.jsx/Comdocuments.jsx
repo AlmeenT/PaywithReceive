@@ -55,11 +55,10 @@ const Comdocuments = (props) => {
          
           </form>
           </div>
-            <NavLink to ="/payout" className={({isActive}) => (isActive ? "link-active" : "link")}>
-    Payout
+           
     <button onClick={handleSubmit} className="patn" type="submit">
           Save changes
-        </button></NavLink>
+        </button>
     </div>
   )
 }
