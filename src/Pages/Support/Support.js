@@ -14,7 +14,10 @@ import Suggest from '../../Components/Suggest/Suggest'
 import APIdoc from '../../Components/API doc/APIdoc'
 
 const Support = () => {
+    const [showAPI, setShowAPI] = useState(false)
+    const [show1, setShow1] = useState(false)
     const [show, setShow] = useState(false)
+    const [showHelp, setShowHelp] = useState(false)
   return (
     <div className='main'>
         <MainNav />
@@ -25,8 +28,8 @@ const Support = () => {
                     <div className='iconContainer'><img className='supportIcon' alt='' src={search}/></div>
                     <h2 className='supportIntro'> Search the help desk</h2>
                     <p className='sp'>Get quick answers to any questions about Receive</p>
-                    <button className='Sbutton1' onClick={()=> setShow(true)}>find answer</button>
-                    <Search onClose={() => setShow(false)} show={show} />
+                    <button className='Sbutton1' onClick={()=> setShowHelp(true)}>find answer</button>
+                    <Search onClose={() => setShowHelp(false)} show={showHelp} />
                 </div>
                 <div className='otherContainer'>
                     <div className='iconContainer'><img className='supportIcon1' alt='' src={touch}/></div>
@@ -39,15 +42,15 @@ const Support = () => {
                     <div className='iconContainer'><img className='supportIcon' alt='' src={suggest}/></div>
                     <h2 className='supportIntro'> Suggest an improvement</h2>
                     <p className='sp'>If you spot something that can be better, let us know</p>
-                    <button className='Sbutton' onClick={()=> setShow(true)}>make a suggestion</button>
-                    <Suggest onClose={() => setShow(false)} show={show}/>
+                    <button className='Sbutton' onClick={()=> setShow1(true)}>make a suggestion</button>
+                    <Suggest onClose={() => setShow1(false)} show={show1}/>
                 </div>
                 <div className='otherContainer'>
                     <div className='iconContainer'><img className='supportIcon2' alt='' src={api}/></div>
                     <h2 className='supportIntro'> API Documemtation </h2>
                     <p className='sp'>Learn how to build amaxing things with the receive API</p>
-                    <button className='Sbutton' onClick={()=> setShow(true)}>read docs</button>
-                    <APIdoc onClose={() => setShow(false)} show={show}/>
+                    <button className='Sbutton' onClick={()=> setShowAPI(true)}>read docs</button>
+                    <APIdoc onClose={() => setShowAPI(false)} show={showAPI}/>
                 </div>
                 <div className='otherContainer'>
                     <div className='iconContainer'><img className='supportIcon2' alt='' src={guide}/></div>

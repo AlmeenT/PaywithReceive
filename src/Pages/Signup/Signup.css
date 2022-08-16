@@ -129,7 +129,7 @@ small {
     font-size: 15;
     font-weight: 600;
     text-align: center;
-    margin-left: 1%;
+    margin-left: 24%;
 }
 
 
@@ -168,7 +168,7 @@ small {
 
 @media screen and (max-width: 400px) {
     #btn {
-        margin-left: 67px;
+        margin-left: 20px;
     }
     .auth__form-container_fields-content_input label {
         margin-left: 10px;

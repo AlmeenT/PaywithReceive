@@ -13,7 +13,7 @@ function CardPaymentModal() {
         <div className='modalContainer'>
             <h2>CARD PAYMENTS</h2>
             <p className='txt'>Pay using bank cards</p>
-            <div className='card-payment-container'>
+            {/* <div className='card-payment-container'>
                 <div className='card-payment-type'>
                  <img src={PaymentMethod} alt='' />   
                 </div>
@@ -22,7 +22,7 @@ function CardPaymentModal() {
                  <span>123******</span>   
                 </div>
                 <button className='buttonProceed'>Proceed Securely</button>
-            </div>
+            </div> */}
 
             <div className='card-payment-container'>
                 <div className='card-payment-type'>
@@ -32,7 +32,7 @@ function CardPaymentModal() {
                  <p className='user-info'>Sarah King</p>
                  <span>123******</span>   
                 </div>
-                <button className='buttonProceed'>Proceed Securely</button>
+                <Link to='/payWithCreditCard'><button className='buttonProceed'>Proceed Securely</button></Link>
                 <div className='add-card'>
                    <Link to='#'><p>Add New Card</p></Link> 
                 </div>
