@@ -93,7 +93,7 @@ const ForgotPassword2 = () => {
           <input
             className={`colun ${errors.password && "invalid"}`}
             type="password"
-            id="password"
+          
             placeholder="Password"
             maxlength="30"
             minlength="5"

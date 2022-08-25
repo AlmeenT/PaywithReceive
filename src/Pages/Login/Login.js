@@ -93,7 +93,7 @@ const Login = () => {
             <input
               className={`colojay ${errors.email && "invalid"}`}
               type="emailforlog"
-              id="email"
+           
               maxlength="35"
               minlength="7"
               placeholder="Email"
@@ -112,7 +112,7 @@ const Login = () => {
             <input
               className={`colojay ${errors.password && "invalid"}`}
               type="passwordforlog"
-              id="password"
+           
               placeholder="Password"
               maxlength="30"
               minlength="5"

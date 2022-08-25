@@ -122,53 +122,6 @@ p a:hover {
 .p a{
     color: rgba(35, 99, 236, 0.719);
 }
-/* @media screen and (max-width: 600px) {
-
-    .col,
-    input[type="submit"] {
-
-        margin-top: 0;
-        color: rgb(0, 217, 255);
-        width: 10vw;
-        padding: 12px 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    input[type="submit"],
-    input[type="email"],
-    input[type="password"] {
-        margin-top: 20px;
-        color: #010b0c;
-        width: 10vw;
-        padding: 12px 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-    }
-}
-
-@media screen and (max-width: 450px) {
-
-    .col,
-    input[type="submit"],
-    input[type="email"],
-    input[type="password"] {
-
-        margin-top: 0;
-        color: rgb(0, 217, 255);
-        width: 10vw;
-        padding: 12px 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-
-    }
-}*/
 
 @media screen and (min-width: 350px) and (max-width: 550px) {
 
