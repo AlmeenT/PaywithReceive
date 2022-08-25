@@ -89,7 +89,7 @@ const ForgotPassword = () => {
           <input
             className={`colu ${errors.email && "invalid"}`}
             type="resetemail"
-            id="email"
+  
             maxlength="35"
             minlength="7"
             placeholder="Email"
