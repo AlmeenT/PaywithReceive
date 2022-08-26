@@ -3,7 +3,7 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect} from "react";
 import { useForm } from "react-hook-form";
-import logo from "../../Assets/Images/brand.png";
+import logojay from "../../Assets/Images/brand.png";
 
 const Login = () => {
 
@@ -52,38 +52,47 @@ const Login = () => {
 
 
   return (
-    <div className="container">
-      <div className="logo">
+    <div className="contaner">
+      <div className="logojay">
         <img
-          src={logo}
+          src={logojay}
           alt=""
-          style={{ height: "100px", width: "100px", margin: "10px" }}
+          style={{
+            height: "100px",
+            width: "100px",
+            margin: "10px",
+          }}
         />
-        <h1
+        <h6
           className="re"
-          style={{ color: "#f7941d", fontSize: "40px", marginTop: "-10px" }}
+          style={{
+            color: "#f7941d",
+            fontSize: "50px",
+            marginTop: "20px",
+            display: "inline",
+          }}
         >
           re
-        </h1>
-        <h1
+        </h6>
+        <h6
           className="ceive"
           style={{
-            fontSize: "40px",
+            fontSize: "50px",
             color: "#2f3e91",
             display: "inline",
-            marginTop: "-10px",
+            marginTop: "20px",
           }}
         >
           ceive
-        </h1>
+        </h6>
       </div>
       <h2>Login to your account</h2>
       <form className="form" onSubmit={handleSubmit(submitHandler)}>
-        <div className="row">
-          <div className="col">
+        <div className="rowin">
+          <div className="colojay">
             <input
-              className={`col ${errors.email && "invalid"}`}
-              type="email"
+              className={`colojay ${errors.email && "invalid"}`}
+              type="emailforlog"
               id="email"
               maxlength="35"
               minlength="7"
@@ -98,11 +107,11 @@ const Login = () => {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col">
+        <div className="rowin">
+          <div className="colojay">
             <input
-              className={`col ${errors.password && "invalid"}`}
-              type="password"
+              className={`colojay ${errors.password && "invalid"}`}
+              type="passwordforlog"
               id="password"
               placeholder="Password"
               maxlength="30"
@@ -129,8 +138,6 @@ const Login = () => {
               onKeyUp={() => {
                 trigger("checkbox");
               }}
-              // style={{ width: "25px", margin: "-7px 7px 0 0" }}
-             
             />
             <span>Remember me</span>
           </div>
@@ -139,12 +146,14 @@ const Login = () => {
             <Link to="/forgotPassword">Forgot password?</Link>
           </p>
         </div>
-        <div className="login">
-          <button className='Login'>Login</button>
-        </div>
+        
+          <button className="Lgin">Login</button>
+      
         <p className="p">
           Do not have an account with us?
-          <Link to="/signup"><p className='p2'> Register Now </p></Link>
+          <Link to="/signup">
+            <p className="p2"> Register Now </p>
+          </Link>
         </p>
       </form>
     </div>

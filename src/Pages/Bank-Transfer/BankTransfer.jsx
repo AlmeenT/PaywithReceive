@@ -38,11 +38,15 @@ const BankTransfer = () => {
                     <div className='most-used'><p>FIRST BANK</p></div>
                 </div>
             </div>
-            <Link to='/pay-now'><button className='buttonProceed-1'>Proceed Securely</button></Link>
+            <div className="proceed-container">
+                <Link to='/pay-now'><button className='buttonProceed-1'>Proceed Securely</button></Link>
+                <Link to='/payment' className='back-btn'>Back</Link>
+            </div>
+            
            
 
         </div>
-        <Link to='/payment' className='back-btn'>Back</Link>
+        
 
     </div>
   )

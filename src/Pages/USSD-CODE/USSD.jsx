@@ -24,7 +24,7 @@ const USSD = () => {
                             <input type='text' placeholder='Search banks'></input>
                         </div>    
                         <div className=''>  
-                            <FcSearch style={{height:'30px', width:'40px', marginTop:'5px'}} />
+                            <FcSearch className='search-icon' style={{height:'30px', width:'40px', marginTop:'5px'}} />
                         </div> 
                          
                     </div>

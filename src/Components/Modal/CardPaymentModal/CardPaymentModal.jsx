@@ -38,7 +38,7 @@ function CardPaymentModal() {
                 </div>
                 <div className='change-method'>
                     <img src={LoadingPaymentMethod} alt='' />
-                    <Link to='#'><span>Change Payment Method</span></Link>
+                    <Link to='/payment'><span>Change Payment Method</span></Link>
                 </div>
             </div>
             {/* <div className='titleCloseBtn'>
