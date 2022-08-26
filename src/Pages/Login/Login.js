@@ -91,7 +91,7 @@ const Login = () => {
         <div className="rowin">
           <div className="colojay">
             <input
-              className={`colojay ${errors.email && "invalid"}`}
+              className={`naOjay ${errors.email && "invalid"}`}
               type="emailforlog"
            
               maxlength="35"
@@ -110,7 +110,7 @@ const Login = () => {
         <div className="rowin">
           <div className="colojay">
             <input
-              className={`colojay ${errors.password && "invalid"}`}
+              className={`sirOjay ${errors.password && "invalid"}`}
               type="passwordforlog"
            
               placeholder="Password"

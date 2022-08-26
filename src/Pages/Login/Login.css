@@ -49,8 +49,8 @@ h2 {
 }
 
 
-input[type="emailforlog"],
-input[type="passwordforlog"] {
+.naOjay,
+.sirOjay{
     width: 25vw;
     padding: 12px 12px;
     border: 1px solid #ccc;
@@ -58,8 +58,8 @@ input[type="passwordforlog"] {
     resize: vertical;
 
 }
-input[type="emailforlog"]:focus,
-input[type="passwordforlog"]:focus {
+.naOjay:focus,
+.sirOjay:focus {
 
     padding: 13px 13px;
     border: 1px solid rgb(238, 200, 200);
@@ -125,8 +125,8 @@ p a:hover {
 
 @media screen and (min-width: 350px) and (max-width: 550px) {
 
-    input[type="emailforlog"],
-    input[type="passwordforlog"] {
+.naOjay,
+    .sirOjay {
         margin-top: 20px;
         width: 70vw;
     }
