@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The main site for RECEIVE(paywithReceive)
+The official site for RECEIVE(paywithReceive)
+Receive is a fintech API (payment gateway system)
 
 ## To my fellow developers
 Please let's do a neat job on the repo
