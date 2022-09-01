@@ -87,7 +87,7 @@ const ForgotPassword = () => {
         </div>
         <div className="colu">
           <input
-            className={`colu ${errors.email && "invalid"}`}
+            className={`colu resetemail ${errors.email && "invalid"}`}
             type="resetemail"
   
             maxlength="35"
