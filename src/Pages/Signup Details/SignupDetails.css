@@ -201,16 +201,16 @@ small {
         margin-left: -15px;
     }
 
-    .auth__form-container_fields-content__logo  {
-        /* background-color: blue; */
+    /* .auth__form-container_fields-content__logo  {
+        background-color: blue;
         width: 10px;
         margin-left: -10px;
-    }
-    .auth__form-container_fields-content__logo img {
-        /* background-color: blue; */
+    } */
+    /* .auth__form-container_fields-content__logo img {
+        background-color: blue;
         width: 20px;
         height: 20px;
-    }
+    } */
     .auth__form-container_fields-content_input input {
         width: 90%;
 

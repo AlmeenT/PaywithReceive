@@ -44,6 +44,8 @@ import BankTransfer from './Pages/Bank-Transfer/BankTransfer'
 // import Crypto from '../src/Assets/Images/crypto-1.png';
 // import USSDCODE from '../src/Assets/Images/ussd.png';
 import CardPaymentModal from "./Components/Modal/CardPaymentModal/CardPaymentModal";
+import CreditCard from "./Components/Modal/CreditCardForm/CreditCard";
+import Otp from "./Components/Modal/OTP/Otp";
 
 function App() {
   const [showSideNav, setShowSideNav] = useState(true);
@@ -128,6 +130,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/payment/cardPayment" element={<CardPaymentModal />} />
+        <Route path="/payment/cardPayment/creditCard" element={<CreditCard />} />
+        <Route path="/payment/cardPayment/creditCard/otp" element={<Otp />} />
         <Route path="/payment/bank" element={<BankTransfer />} />
         <Route path="/payment/crypto" element={<Cryptocurrency />} />
         <Route path="/payment/ussd" element={<USSDCODE />} />
