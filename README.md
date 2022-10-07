@@ -1,17 +1,18 @@
+# The official site for RECEIVE(paywithReceive)
+Receive is a fintech API (payment gateway system)
+
+## To my fellow developers/collaborators
+Please let's do a neat job on the repo
+I've created all the pages to be worked on (for now). 
+I've also created the routes for each page, so load your page route, to observe your work
+If you are to use a component, create it in the component folder and call it you know how.
+Let's get this done!.
+Thank you
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-The main site for RECEIVE(paywithReceive)
-
-## To my fellow developers
-Please let's do a neat job on the repo
-I've created all the pages to be worked on (for now). 
-So go into the folder of the page you are to work on, I've created the .js and .css file as well
-I've also created the routes for each page, so load your page route, to observe your work
-If you are to use a component, create it in the component folder and call it you know how.
-If you are using an image or the logo sef, put it in the asset or image folder.
-Thank you
 
 ## Available Scripts
 
