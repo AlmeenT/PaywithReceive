@@ -83,7 +83,7 @@ const ForgotPassword2 = () => {
           ceive
         </h6>
       </div>
-      <h2 className='put'>Reset your password</h2>
+      <h2 className="put">Reset your password</h2>
       <p>Type in your New Password.</p>
       <form className="form" onSubmit={handleSubmit(submitHandler)}>
         <div className="rower">
@@ -91,9 +91,8 @@ const ForgotPassword2 = () => {
         </div>
         <div className="colun">
           <input
-            className={`colun ${errors.password && "invalid"}`}
+            className={`colun resetpassw ${errors.password && "invalid"}`}
             type="password"
-          
             placeholder="Password"
             maxlength="30"
             minlength="5"
@@ -112,7 +111,9 @@ const ForgotPassword2 = () => {
         </div>
         <div className="colun">
           <input
-            className={`form-control ${errors.confirmPassword && "invalid"}`}
+            className={`form-control resetpassw ${
+              errors.confirmPassword && "invalid"
+            }`}
             type="password"
             placeholder="Confirm Password"
             {...register("ConfirmPassword", {
