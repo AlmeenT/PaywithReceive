@@ -78,7 +78,10 @@ const Signup = () => {
             />
             <h1
               className="first"
-              style={{ color: "#f7941d", fontSize: "50px", marginTop: "-10px" }}
+              style={{ 
+                color: "#f7941d", 
+                fontSize: "50px", 
+                marginTop: "17px" }}
             >
               re
             </h1>
@@ -88,7 +91,7 @@ const Signup = () => {
                 fontSize: "50px",
                 color: "#2f3e91",
                 display: "inline",
-                marginTop: "-10px",
+                marginTop: "17px",
               }}
             >
               ceive
