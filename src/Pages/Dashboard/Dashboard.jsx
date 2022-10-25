@@ -6,6 +6,8 @@ import DashboardSetup from '../../Components/dashboardAccountSetup/DashboardSetu
 
 
 const Dashboard = () => {
+  let userDetails = JSON.parse(sessionStorage.getItem("userDetails"))
+    
   return (
     //please dont remove this lg:ml-[264px] mt-[100px] lg:mt-[112px] just write your own code in it. thank you
     <section>
@@ -14,7 +16,8 @@ const Dashboard = () => {
         <div className='flex items-center lg:pl-[120px]'>
             <img className='w-[80px] h-[80px] rounded-full' src={image} alt="Mypic" />
             <div className='ml-[20px] lg:ml-[37px]'>
-              <h2 className='text-[18px] lg:text-[24px] leading-[20px] lg:leading-[32px] font-medium text-black font-[DM-sans]'>Amgbara Sofiritari Ibikoroma</h2>
+              <h2 className='text-[18px] lg:text-[24px] leading-[20px] lg:leading-[32px] font-medium text-black font-[DM-sans]'>{userDetails.username}</h2>
+              {/* <span className='text-[18px] lg:text-[15px] leading-[20px] lg:leading-[32px] font-medium text-black font-[DM-sans]'>{userDetails.email}</span> */}
               <p className='underline cursor-pointer lg:mt-[10px] text-[12px] lg:text-[16px] leading-[20px] font-normal text-[#292561] lg:ml-[24px]'>View profile</p>
             </div>
         </div>
