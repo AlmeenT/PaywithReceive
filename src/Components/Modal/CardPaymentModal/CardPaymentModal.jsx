@@ -32,13 +32,13 @@ function CardPaymentModal() {
                  <p className='user-info'>Sarah King</p>
                  <span>123******</span>   
                 </div>
-                <Link to='/payWithCreditCard'><button className='buttonProceed'>Proceed Securely</button></Link>
+                <Link to='/payment/cardPayment/creditCard'><button className='buttonProceed'>Proceed Securely</button></Link>
                 <div className='add-card'>
                    <Link to='#'><p>Add New Card</p></Link> 
                 </div>
                 <div className='change-method'>
                     <img src={LoadingPaymentMethod} alt='' />
-                    <Link to='#'><span>Change Payment Method</span></Link>
+                    <Link to='/payment'><span>Change Payment Method</span></Link>
                 </div>
             </div>
             {/* <div className='titleCloseBtn'>

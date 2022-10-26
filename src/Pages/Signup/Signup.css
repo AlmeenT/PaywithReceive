@@ -31,8 +31,9 @@
     
 }
 .auth__form-container_fields-content p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
     color: #05245a;
     text-align: center;
 }
@@ -54,7 +55,7 @@
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.7px;
-    line-height: 1.3;
+    /* line-height: 1.3; */
     padding-right: 60%;
     text-align: left;
     /* align-items: center;
@@ -104,6 +105,7 @@
     color: #2f3e91;
     margin-top: 10px;
     
+    margin-right: 60px;
 }
 .auth__form-container_fields-content_logIn a {
     color: rgb(248, 123, 7);
@@ -129,7 +131,7 @@ small {
     font-size: 15;
     font-weight: 600;
     text-align: center;
-    margin-left: 24%;
+    margin-left: 18%;
 }
 
 
@@ -149,13 +151,19 @@ small {
 
     .auth__form-container_fields-content__logo  {
         /* background-color: blue; */
-        width: 10px;
+        width: 100px;
         margin-left: -10px;
+    }
+    .auth__form-container_fields-content p {
+        margin-bottom: 20px
     }
     .auth__form-container_fields-content__logo img {
         /* background-color: blue; */
         width: 20px;
         height: 20px;
+    }
+    .auth__form-container_fields-content_input {
+        padding-left: 10px;
     }
     .auth__form-container_fields-content_input input {
         width: 90%;
@@ -164,11 +172,23 @@ small {
     .btn-1 {
         margin-right: 50px;
     }
+    .auth__form-container_fields-content_logIn p {
+    font-size: 15px;
+    color: #2f3e91;
+    margin-top: 10px;
+    margin-right: 13px;
+}
 }
 
 @media screen and (max-width: 400px) {
     #btn {
-        margin-left: 20px;
+        margin-left: 10%;
+    }
+    .auth__form-container_fields-content_logIn p {
+        font-size: 15px;
+        color: #2f3e91;
+        margin-top: 10px;
+        margin-right: -1px;
     }
     .auth__form-container_fields-content_input label {
         margin-left: 10px;

@@ -99,11 +99,11 @@ const Payment = ({cardLists}) => {
           
         </> */}
         {/* <CardPaymentModal /> */}
-        <div className='payment-table'>
+        <div className='payment-table-1'>
           <table className='table-content'>
               
               <tr>
-                <th>Transaction ID</th>
+                <th> ID</th>
                 <th>Description</th>
                 <th>Date</th>
                 <th>Method</th>
@@ -117,7 +117,7 @@ const Payment = ({cardLists}) => {
                 <td>R123456</td>
                 <td>Received</td>
                 <td>01/02/22</td>
-                <td>Bank Transfer</td>
+                <td> Transfer</td>
                 <td>Successful</td>
                 <td>20,000</td>
               </tr>

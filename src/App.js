@@ -37,6 +37,7 @@ import USSDCODE from './Pages/USSD-CODE/USSD'
 import Cryptocurrency from './Pages/Cryptocurrency/Cryptocurrency'
 import BankTransfer from './Pages/Bank-Transfer/BankTransfer'
 //import PaymentDetails from './Pages/PaymentDetails/PaymentDetails';
+import PrivateComponent from "./Components/PrivateComponent/PrivateComponent";
 
 
 // import PaymentCard from '../src//Assets/Images/card-payment.png';
@@ -44,6 +45,8 @@ import BankTransfer from './Pages/Bank-Transfer/BankTransfer'
 // import Crypto from '../src/Assets/Images/crypto-1.png';
 // import USSDCODE from '../src/Assets/Images/ussd.png';
 import CardPaymentModal from "./Components/Modal/CardPaymentModal/CardPaymentModal";
+import CreditCard from "./Components/Modal/CreditCardForm/CreditCard";
+import Otp from "./Components/Modal/OTP/Otp";
 
 function App() {
   const [showSideNav, setShowSideNav] = useState(true);
@@ -112,40 +115,45 @@ function App() {
       )}
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sidebar" element={<Sidebar />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/support" element={<Support />} />
-        <Route path="/signupLogin" element={<SignupOption />} />
+        <Route element={<PrivateComponent />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/sidebar" element={<Sidebar />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/signupLogin" element={<SignupOption />} />
+          
+          <Route path="/signupDetails" element={<SignupDetails />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/forgotPassword" element={<ForgotPassword />} />
+          <Route path="/forgotPassword2" element={<ForgotPassword2 />} />
+          <Route path="/busDetails2" element={<BusinessDetails2 />} />
+          <Route path="/busDetails4" element={<BusinessDetails4 />} />
+          <Route path="/busDetails5" element={<BusinessDetails5 />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/payment/cardPayment" element={<CardPaymentModal />} />
+          <Route path="/payment/cardPayment/creditCard" element={<CreditCard />} />
+          <Route path="/payment/cardPayment/creditCard/otp" element={<Otp />} />
+          <Route path="/payment/bank" element={<BankTransfer />} />
+          <Route path="/payment/crypto" element={<Cryptocurrency />} />
+          <Route path="/payment/ussd" element={<USSDCODE />} />
+          {/* <Route path="/payment/:name" element={<PaymentDetails  cardLists={cardLists}/>} />  */}
+          <Route path="/transaction" element={<Transaction />} />
+          <Route path="/myAccount" element={<MyAccount />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/developerCode" element={<DeveloperCode />} />
+          <Route path="/accountSettings" element={<AccountSettings />} />
+          <Route path="/payout" element={<Payout />} />
+          <Route path="/compilance" element={<Compilance />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/api" element={<API />} />
+          <Route path="/comprofile" element={<Comprofile />} />
+          <Route path="/comcontact" element={<Comcontact />} />
+          <Route path="/comdocuments" element={<Comdocuments />} />
+          <Route path="/comregistration" element={<Comregistration />} />
+        </Route>
         <Route path="/signup" element={<Signup />} />
-        <Route path="/signupDetails" element={<SignupDetails />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/forgotPassword" element={<ForgotPassword />} />
-        <Route path="/forgotPassword2" element={<ForgotPassword2 />} />
-        <Route path="/busDetails2" element={<BusinessDetails2 />} />
-        <Route path="/busDetails4" element={<BusinessDetails4 />} />
-        <Route path="/busDetails5" element={<BusinessDetails5 />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/payment" element={<Payment />} />
-        <Route path="/payment/cardPayment" element={<CardPaymentModal />} />
-        <Route path="/payment/bank" element={<BankTransfer />} />
-        <Route path="/payment/crypto" element={<Cryptocurrency />} />
-        <Route path="/payment/ussd" element={<USSDCODE />} />
-        {/* <Route path="/payment/:name" element={<PaymentDetails  cardLists={cardLists}/>} />  */}
-        <Route path="/transaction" element={<Transaction />} />
-        <Route path="/myAccount" element={<MyAccount />} />
-        <Route path="/contactUs" element={<ContactUs />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/developerCode" element={<DeveloperCode />} />
-        <Route path="/accountSettings" element={<AccountSettings />} />
-        <Route path="/payout" element={<Payout />} />
-        <Route path="/compilance" element={<Compilance />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/api" element={<API />} />
-        <Route path="/comprofile" element={<Comprofile />} />
-        <Route path="/comcontact" element={<Comcontact />} />
-        <Route path="/comdocuments" element={<Comdocuments />} />
-        <Route path="/comregistration" element={<Comregistration />} />
       </Routes>
 
 

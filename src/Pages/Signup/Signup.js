@@ -1,4 +1,6 @@
+import { fromJS } from "draft-js/lib/BlockTree";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 // import { GoogleLogin } from 'react-google-login'
 import { useForm } from "react-hook-form";
@@ -6,9 +8,30 @@ import logo from "../../Assets/Images/brand.png";
 import "./Signup.css";
 
 const Signup = () => {
-  // const handlefailure = (result) => {
-  //   alert(result)
-  // }
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setconfirmPassword] = useState('');
+  const navigate = useNavigate();
+
+  const collectData=async()=>{
+    console.warn(username, email, password, confirmPassword)
+    let result =await fetch("http://localhost:5000/register", {
+      method: 'post',
+      body: JSON.stringify({username, email, password, confirmPassword}),
+      headers:{
+        'content-type':'application/json'
+      }
+    });
+    result =await result.json();
+    console.log(result)
+    localStorage.setItem("user", JSON.stringify(result))
+    navigate('/dashboard')
+    
+  }
+  const handlefailure = (result) => {
+    alert(result)
+  }
 
   // const handleLogin = (googleDate) => {
   //   console.log(googleDate)
@@ -29,6 +52,11 @@ const Signup = () => {
     password: "",
     confirmPassword: "",
   });
+  // const [username, setUsername] = useState('');
+
+  // const collectData=()=>{
+  //   console.warn(form)
+  // }
 
   useEffect(() => {
     if (
@@ -46,28 +74,35 @@ const Signup = () => {
     form.password,
     form.confirmPassword])
 
+    // useEffect(() => {
+    //   fetch('http://localhost:5000/register')
+    //   .then(response=>response.json())
+    //   .then(data=>console.log(data))
+    // }, [])
+
   const handleChange = (e) => {
     setForm({
       ...form,
-      [e.target.username]: e.target.value,
-    });
-  };
+      [e.target.name]: e.target.value
+    })
+  }
 
-  const submitHandler = (e) => {
+  const submitHandler =(e) => {
     // e.preventDefault()
-    sessionStorage.setItem("userDetails", JSON.stringify({ ...form }));
-
-    window.location = "/dashboard";
+    sessionStorage.setItem("userDetails", JSON.stringify({ username, email, password, confirmPassword }));
+   
+    // window.location = "/dashboard";
     reset();
+    
   }
 
 
 
 
-  const password = watch("password");
+  // const password = watch("password");
 
   return (
-    <div className="auth__form-container">
+    <div className="auth__form-container register">
       <div className="auth__form-container_fields">
         <div className="auth__form-container_fields-content">
           <div className="auth__form-container_fields-content__logo">
@@ -78,7 +113,10 @@ const Signup = () => {
             />
             <h1
               className="first"
-              style={{ color: "#f7941d", fontSize: "50px", marginTop: "-10px" }}
+              style={{ 
+                color: "#f7941d", 
+                fontSize: "50px", 
+                marginTop: "17px" }}
             >
               re
             </h1>
@@ -88,7 +126,7 @@ const Signup = () => {
                 fontSize: "50px",
                 color: "#2f3e91",
                 display: "inline",
-                marginTop: "-10px",
+                marginTop: "17px",
               }}
             >
               ceive
@@ -108,6 +146,8 @@ const Signup = () => {
                 onKeyUp={() => {
                   trigger("username");
                 }}
+                // onChange={handleChange}
+                onChange={(e)=>setUsername(e.target.value)}
               />
               
               {errors.username && (<small>{errors.username.message}</small>)}
@@ -131,7 +171,8 @@ const Signup = () => {
                 onKeyUp={() => {
                   trigger("email");
                 }}
-                onChange={handleChange}
+                // onChange={handleChange}
+                onChange={(e)=>setEmail(e.target.value)}
               />
               {errors.email && <small>{errors.email.message}</small>}
             </div>
@@ -152,7 +193,8 @@ const Signup = () => {
                 onKeyUp={() => {
                   trigger("password");
                 }}
-                onChange={handleChange}
+                // onChange={handleChange}
+                onChange={(e)=>setPassword(e.target.value)}
               />
               {errors.password && <small>{errors.password.message}</small>}
             </div>
@@ -173,7 +215,8 @@ const Signup = () => {
                 onKeyUp={() => {
                   trigger("confirmPassword");
                 }}
-                onChange={handleChange}
+                // onChange={handleChange}
+                onChange={(e)=>setconfirmPassword(e.target.value)}
               />
               {errors.ConfirmPassword && (
                 <small>{errors.ConfirmPassword.message}</small>
@@ -216,12 +259,14 @@ const Signup = () => {
               </p>
             </div>
             <button
+          
               className={
                 formValid
                   ? "auth__form-container-active"
                   : "auth__form-container-submit"
               }
               id="btn"
+              onClick={collectData}
             >
               Create Account
             </button>

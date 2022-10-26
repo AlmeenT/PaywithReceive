@@ -103,3 +103,49 @@
 .ussd-bank-code-container {
     margin-top: 10px;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .ussd-text h1 {
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .ussd-code {
+        width: 246px;
+        height: 71px;
+       
+    }
+    .ussd-code p {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .ussd-search-wrapper-container {
+        width: 220px;
+        display: flex;
+        background-color: #D9D9D9;
+        border-radius: 5px;
+    }
+    
+    .ussd-search-input input {
+        outline: none;
+        background-color: transparent;
+        padding: 4px;
+        margin-left: -3px;
+    }
+    
+
+.ussd-container {
+    background-color: #292561;
+    width: 328px;
+    height: 300px;
+    bottom: 20px;
+    border-radius: 10px;
+}
+.ussd-bank-wrapper-container {
+    width: 90%;
+}
+    
+    
+}

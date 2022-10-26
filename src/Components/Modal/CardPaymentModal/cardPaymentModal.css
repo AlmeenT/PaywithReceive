@@ -65,8 +65,9 @@
 .change-method {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0px;
     justify-content: center;
+    
     
     
 }
@@ -95,7 +96,7 @@
         
     }
     .add-card {
-        margin: 10px 75px;
+        margin: 34px 75px;
     }
 
 
